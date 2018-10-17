@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Introduction · GitBook</title>
+        <title>二分法 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="求和问题.html" />
     
+    <link rel="prev" href="18. 4Sum.html" />
     
 
     </head>
@@ -87,7 +87,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -197,7 +197,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="二分法.html">
+        <li class="chapter active" data-level="1.3" data-path="二分法.html">
             
                 <a href="二分法.html">
             
@@ -291,7 +291,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Introduction</a>
+        <a href="." >二分法</a>
     </h1>
 </div>
 
@@ -306,8 +306,67 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="introduction">Introduction</h1>
-<p>My leetcode solutions</p>
+                                <h1 id="&#x4E8C;&#x5206;&#x6CD5;">&#x4E8C;&#x5206;&#x6CD5;</h1>
+<p>&#x7528;&#x9014;&#xFF1A;&#x9488;&#x5BF9;Sorted&#x6570;&#x7EC4;&#x67E5;&#x627E;&#x7684;&#x7B97;&#x6CD5;
+&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;: O(log(n))</p>
+<h2 id="&#x6A21;&#x677F;">&#x6A21;&#x677F;</h2>
+<h3 id="&#x6A21;&#x677F;1">&#x6A21;&#x677F;1</h3>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">binarySearch</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] nums, <span class="hljs-keyword">int</span> target)</span></span>{
+  <span class="hljs-keyword">if</span>(nums == <span class="hljs-keyword">null</span> || nums.length == <span class="hljs-number">0</span>)
+    <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+
+  <span class="hljs-keyword">int</span> left = <span class="hljs-number">0</span>, right = nums.length - <span class="hljs-number">1</span>;
+  <span class="hljs-keyword">while</span>(left &lt;= right){
+    <span class="hljs-comment">// Prevent (left + right) overflow</span>
+    <span class="hljs-keyword">int</span> mid = left + (right - left) / <span class="hljs-number">2</span>;
+    <span class="hljs-keyword">if</span>(nums[mid] == target){ <span class="hljs-keyword">return</span> mid; }
+    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(nums[mid] &lt; target) { left = mid + <span class="hljs-number">1</span>; }
+    <span class="hljs-keyword">else</span> { right = mid - <span class="hljs-number">1</span>; }
+  }
+
+  <span class="hljs-comment">// End Condition: left &gt; right</span>
+  <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+}
+</code></pre>
+<h3 id="&#x6A21;&#x677F;2">&#x6A21;&#x677F;2</h3>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">binarySearch</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] nums, <span class="hljs-keyword">int</span> target)</span> </span>{
+    <span class="hljs-keyword">if</span> (nums == <span class="hljs-keyword">null</span> || nums.length == <span class="hljs-number">0</span>)
+        <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+
+    <span class="hljs-keyword">int</span> left = <span class="hljs-number">0</span>, right = nums.length - <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">while</span> (left + <span class="hljs-number">1</span> &lt; right){
+        <span class="hljs-comment">// Prevent (left + right) overflow</span>
+        <span class="hljs-keyword">int</span> mid = left + (right - left) / <span class="hljs-number">2</span>;
+        <span class="hljs-keyword">if</span> (nums[mid] == target) {
+            <span class="hljs-keyword">return</span> mid;
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (nums[mid] &lt; target) {
+            left = mid;
+        } <span class="hljs-keyword">else</span> {
+            right = mid;
+        }
+    }
+
+    <span class="hljs-comment">// Post-processing:</span>
+    <span class="hljs-comment">// End Condition: left + 1 == right</span>
+    <span class="hljs-keyword">if</span>(nums[left] == target) <span class="hljs-keyword">return</span> left;
+    <span class="hljs-keyword">if</span>(nums[right] == target) <span class="hljs-keyword">return</span> right;
+    <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+}
+</code></pre>
+<h2 id="&#x5E38;&#x89C1;&#x9519;&#x8BEF;">&#x5E38;&#x89C1;&#x9519;&#x8BEF;</h2>
+<h3 id="&#x6EA2;&#x51FA;">&#x6EA2;&#x51FA;</h3>
+<p>mid = (l+r)/2&#x7684;&#x8BDD;
+&#x5728;&#x5BF9;&#x4E24;&#x4E2A;Signed 32-bit&#x6570;&#x5B57;&#x8FDB;&#x884C;&#x76F8;&#x52A0;&#x65F6;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x6EA2;&#x51FA;</p>
+<h3 id="&#x6B7B;&#x5FAA;&#x73AF;">&#x6B7B;&#x5FAA;&#x73AF;</h3>
+<p>&#x5982;&#x679C;&#x7B2C;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#x91CC;&#x5199;&#x6210;&#x4E86;</p>
+<pre><code>if (nums[mid] == target) {
+    return mid;
+} else if (nums[mid] &lt; target) {
+    left = mid;
+} else {
+    right = mid;
+}
+</code></pre><p>&#x8FD9;&#x91CC;&#x5C31;&#x4F1A;&#x51FA;&#x73B0;&#x6B7B;&#x5FAA;&#x73AF;</p>
 
                                 
                                 </section>
@@ -335,10 +394,10 @@
 
             
                 
-                
-                <a href="求和问题.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 求和问题">
-                    <i class="fa fa-angle-right"></i>
+                <a href="18. 4Sum.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 4Sum">
+                    <i class="fa fa-angle-left"></i>
                 </a>
+                
                 
             
         
@@ -347,7 +406,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"求和问题","level":"1.2","depth":1,"path":"求和问题.md","ref":"求和问题.md","articles":[{"title":"2 Sum","level":"1.2.1","depth":2,"path":"1. Two Sum.md","ref":"1. Two Sum.md","articles":[]},{"title":"Two Sum II - Input array is sorted","level":"1.2.2","depth":2,"path":"167. Two Sum II - Input array is sorted.md","ref":"167. Two Sum II - Input array is sorted.md","articles":[]},{"title":"3 Sum","level":"1.2.3","depth":2,"path":"15. 3Sum.md","ref":"15. 3Sum.md","articles":[]},{"title":"3Sum Closest","level":"1.2.4","depth":2,"path":"16. 3Sum Closest.md","ref":"16. 3Sum Closest.md","articles":[]},{"title":"3Sum Smaller","level":"1.2.5","depth":2,"path":"259. 3Sum Smaller.md","ref":"259. 3Sum Smaller.md","articles":[]},{"title":"4Sum","level":"1.2.6","depth":2,"path":"18. 4Sum.md","ref":"18. 4Sum.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2018-10-05T07:50:10.842Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-17T08:06:49.456Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"二分法","level":"1.3","depth":1,"next":{"title":"有明确target的","level":"1.3.1","depth":2,"ref":"","articles":[{"title":"Guess Number Higher or Lower","level":"1.3.1.1","depth":3,"path":"374.Guess Number Higher or Lower.md","ref":"374.Guess Number Higher or Lower.md","articles":[]},{"title":"Peak Index in a Mountain Array","level":"1.3.1.2","depth":3,"path":"852.Peak Index in a Mountain Array.md","ref":"852.Peak Index in a Mountain Array.md","articles":[]}]},"previous":{"title":"4Sum","level":"1.2.6","depth":2,"path":"18. 4Sum.md","ref":"18. 4Sum.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"二分法.md","mtime":"2018-10-17T07:48:57.287Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-17T08:06:49.456Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

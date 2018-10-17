@@ -8,3 +8,7 @@
   * [3Sum Closest](16. 3Sum Closest.md)
   * [3Sum Smaller](259. 3Sum Smaller.md)
   * [4Sum](18. 4Sum.md)
+* [二分法](二分法.md)
+  * [有明确target的]()
+    * [Guess Number Higher or Lower](374.Guess Number Higher or Lower.md)
+    * [Peak Index in a Mountain Array](852.Peak Index in a Mountain Array.md)

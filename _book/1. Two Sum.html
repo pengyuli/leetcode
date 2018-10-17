@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Introduction · GitBook</title>
+        <title>2 Sum · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="求和问题.html" />
+    <link rel="next" href="167. Two Sum II - Input array is sorted.html" />
     
+    
+    <link rel="prev" href="求和问题.html" />
     
 
     </head>
@@ -87,7 +89,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -114,7 +116,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="1. Two Sum.html">
+        <li class="chapter active" data-level="1.2.1" data-path="1. Two Sum.html">
             
                 <a href="1. Two Sum.html">
             
@@ -291,7 +293,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Introduction</a>
+        <a href="." >2 Sum</a>
     </h1>
 </div>
 
@@ -306,8 +308,29 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="introduction">Introduction</h1>
-<p>My leetcode solutions</p>
+                                <h1 id="two-sum">Two Sum</h1>
+<h2 id="&#x65B9;&#x6CD5;-hashmap">&#x65B9;&#x6CD5;: HashMap</h2>
+<p>&#x904D;&#x5386;&#x6570;&#x7EC4;, &#x7528;&#x4E00;&#x4E2A;HashMap&#x6765;&#x8BB0;&#x5F55;&#x5F53;&#x524D;&#x8BBF;&#x95EE;&#x8FC7;&#x7684;&#x6570;&#x5B57;, &#x540C;&#x65F6;check target-&#x5F53;&#x524D;&#x7684;&#x6570;&#x503C;&#x662F;&#x5426;&#x5728;map&#x4E2D;</p>
+<h2 id="&#x590D;&#x6742;&#x5EA6;">&#x590D;&#x6742;&#x5EA6;</h2>
+<p>&#x65F6;&#x95F4;O(n) &#x7A7A;&#x95F4;O(n)</p>
+<h2 id="&#x4EE3;&#x7801;">&#x4EE3;&#x7801;</h2>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span>[] twoSum(<span class="hljs-keyword">int</span>[] nums, <span class="hljs-keyword">int</span> target) {
+        <span class="hljs-keyword">int</span>[] res = {-<span class="hljs-number">1</span>,-<span class="hljs-number">1</span>};
+        Map&lt;Integer, Integer&gt; map = <span class="hljs-keyword">new</span> HashMap&lt;Integer, Integer&gt;();
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i&lt;nums.length; i++) {
+            <span class="hljs-keyword">int</span> k = target - nums[i];
+            <span class="hljs-keyword">if</span> (map.containsKey(k)) {
+                res[<span class="hljs-number">0</span>] = map.get(k);
+                res[<span class="hljs-number">1</span>] = i;
+                <span class="hljs-keyword">return</span> res;
+            }
+            map.put(nums[i],i);
+        }
+        <span class="hljs-keyword">return</span> res;
+    }
+}
+</code></pre>
 
                                 
                                 </section>
@@ -335,8 +358,12 @@
 
             
                 
+                <a href="求和问题.html" class="navigation navigation-prev " aria-label="Previous page: 求和问题">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="求和问题.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 求和问题">
+                
+                <a href="167. Two Sum II - Input array is sorted.html" class="navigation navigation-next " aria-label="Next page: Two Sum II - Input array is sorted">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -347,7 +374,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"求和问题","level":"1.2","depth":1,"path":"求和问题.md","ref":"求和问题.md","articles":[{"title":"2 Sum","level":"1.2.1","depth":2,"path":"1. Two Sum.md","ref":"1. Two Sum.md","articles":[]},{"title":"Two Sum II - Input array is sorted","level":"1.2.2","depth":2,"path":"167. Two Sum II - Input array is sorted.md","ref":"167. Two Sum II - Input array is sorted.md","articles":[]},{"title":"3 Sum","level":"1.2.3","depth":2,"path":"15. 3Sum.md","ref":"15. 3Sum.md","articles":[]},{"title":"3Sum Closest","level":"1.2.4","depth":2,"path":"16. 3Sum Closest.md","ref":"16. 3Sum Closest.md","articles":[]},{"title":"3Sum Smaller","level":"1.2.5","depth":2,"path":"259. 3Sum Smaller.md","ref":"259. 3Sum Smaller.md","articles":[]},{"title":"4Sum","level":"1.2.6","depth":2,"path":"18. 4Sum.md","ref":"18. 4Sum.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2018-10-05T07:50:10.842Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-17T08:06:49.456Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2 Sum","level":"1.2.1","depth":2,"next":{"title":"Two Sum II - Input array is sorted","level":"1.2.2","depth":2,"path":"167. Two Sum II - Input array is sorted.md","ref":"167. Two Sum II - Input array is sorted.md","articles":[]},"previous":{"title":"求和问题","level":"1.2","depth":1,"path":"求和问题.md","ref":"求和问题.md","articles":[{"title":"2 Sum","level":"1.2.1","depth":2,"path":"1. Two Sum.md","ref":"1. Two Sum.md","articles":[]},{"title":"Two Sum II - Input array is sorted","level":"1.2.2","depth":2,"path":"167. Two Sum II - Input array is sorted.md","ref":"167. Two Sum II - Input array is sorted.md","articles":[]},{"title":"3 Sum","level":"1.2.3","depth":2,"path":"15. 3Sum.md","ref":"15. 3Sum.md","articles":[]},{"title":"3Sum Closest","level":"1.2.4","depth":2,"path":"16. 3Sum Closest.md","ref":"16. 3Sum Closest.md","articles":[]},{"title":"3Sum Smaller","level":"1.2.5","depth":2,"path":"259. 3Sum Smaller.md","ref":"259. 3Sum Smaller.md","articles":[]},{"title":"4Sum","level":"1.2.6","depth":2,"path":"18. 4Sum.md","ref":"18. 4Sum.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1. Two Sum.md","mtime":"2018-10-09T05:47:00.554Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-17T08:06:49.456Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

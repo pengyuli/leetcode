@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Introduction · GitBook</title>
+        <title>3Sum Smaller · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="求和问题.html" />
+    <link rel="next" href="18. 4Sum.html" />
     
+    
+    <link rel="prev" href="16. 3Sum Closest.html" />
     
 
     </head>
@@ -87,7 +89,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -166,7 +168,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5" data-path="259. 3Sum Smaller.html">
+        <li class="chapter active" data-level="1.2.5" data-path="259. 3Sum Smaller.html">
             
                 <a href="259. 3Sum Smaller.html">
             
@@ -291,7 +293,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Introduction</a>
+        <a href="." >3Sum Smaller</a>
     </h1>
 </div>
 
@@ -306,8 +308,33 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="introduction">Introduction</h1>
-<p>My leetcode solutions</p>
+                                <h1 id="3sum-smaller">3Sum Smaller</h1>
+<h2 id="&#x601D;&#x8DEF;">&#x601D;&#x8DEF;</h2>
+<p>&#x8FD9;&#x9053;&#x9898;&#x8981;&#x6C42;O(n^2)&#x89E3;&#x9898;, &#x6240;&#x4EE5;&#x8FD8;&#x662F;&#x53CC;&#x6307;&#x9488;&#x7684;&#x65B9;&#x6CD5;. &#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x5982;&#x679C;&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;sum&#x662F;&#x5C0F;&#x4E8E;target&#x7684;&#x60C5;&#x51B5;&#x4E0B;, &#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x5BF9;&#x4E8E;&#x5F53;&#x524D;&#x7684;nums[left], right&#x7684;&#x503C;&#x53EF;&#x4EE5;&#x53BB;&#x5F53;&#x524D;right&#x4F4D;&#x7F6E;&#x5411;&#x5DE6;&#x5230;left+1&#x4F4D;&#x7F6E;&#x7684;&#x6240;&#x6709;&#x503C;, &#x90FD;&#x80FD;&#x6EE1;&#x8DB3;sum&lt; target.
+&#x6240;&#x4EE5;&#x6BCF;&#x6B21;left&#x6307;&#x9488;&#x5411;&#x53F3;&#x79FB;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x8BA1;&#x6570;&#x7684;&#x589E;&#x957F;&#x5E45;&#x5EA6;&#x662F;right - left.</p>
+<h2 id="&#x590D;&#x6742;&#x5EA6;">&#x590D;&#x6742;&#x5EA6;</h2>
+<p>&#x65F6;&#x95F4;O(n^2) &#x7A7A;&#x95F4;O(1)</p>
+<h2 id="&#x4EE3;&#x7801;">&#x4EE3;&#x7801;</h2>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">threeSumSmaller</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] nums, <span class="hljs-keyword">int</span> target)</span> </span>{
+        <span class="hljs-keyword">int</span> res = <span class="hljs-number">0</span>;
+        Arrays.sort(nums);
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; nums.length -<span class="hljs-number">2</span>; i++) {
+            <span class="hljs-keyword">int</span> left = i +<span class="hljs-number">1</span>, right = nums.length -<span class="hljs-number">1</span>;
+            <span class="hljs-keyword">while</span> (left &lt; right) {
+                <span class="hljs-keyword">int</span> sum = nums[i] +nums[left] + nums[right];
+                <span class="hljs-keyword">if</span> (sum &lt; target) {
+                    res+= right - left;
+                    left++;
+                } <span class="hljs-keyword">else</span> {
+                    right--;
+                }
+            }
+        }
+        <span class="hljs-keyword">return</span> res;
+    }
+}
+</code></pre>
 
                                 
                                 </section>
@@ -335,8 +362,12 @@
 
             
                 
+                <a href="16. 3Sum Closest.html" class="navigation navigation-prev " aria-label="Previous page: 3Sum Closest">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="求和问题.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 求和问题">
+                
+                <a href="18. 4Sum.html" class="navigation navigation-next " aria-label="Next page: 4Sum">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -347,7 +378,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"求和问题","level":"1.2","depth":1,"path":"求和问题.md","ref":"求和问题.md","articles":[{"title":"2 Sum","level":"1.2.1","depth":2,"path":"1. Two Sum.md","ref":"1. Two Sum.md","articles":[]},{"title":"Two Sum II - Input array is sorted","level":"1.2.2","depth":2,"path":"167. Two Sum II - Input array is sorted.md","ref":"167. Two Sum II - Input array is sorted.md","articles":[]},{"title":"3 Sum","level":"1.2.3","depth":2,"path":"15. 3Sum.md","ref":"15. 3Sum.md","articles":[]},{"title":"3Sum Closest","level":"1.2.4","depth":2,"path":"16. 3Sum Closest.md","ref":"16. 3Sum Closest.md","articles":[]},{"title":"3Sum Smaller","level":"1.2.5","depth":2,"path":"259. 3Sum Smaller.md","ref":"259. 3Sum Smaller.md","articles":[]},{"title":"4Sum","level":"1.2.6","depth":2,"path":"18. 4Sum.md","ref":"18. 4Sum.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2018-10-05T07:50:10.842Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-17T08:06:49.456Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3Sum Smaller","level":"1.2.5","depth":2,"next":{"title":"4Sum","level":"1.2.6","depth":2,"path":"18. 4Sum.md","ref":"18. 4Sum.md","articles":[]},"previous":{"title":"3Sum Closest","level":"1.2.4","depth":2,"path":"16. 3Sum Closest.md","ref":"16. 3Sum Closest.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"259. 3Sum Smaller.md","mtime":"2018-10-09T06:21:32.443Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-17T08:06:49.456Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
