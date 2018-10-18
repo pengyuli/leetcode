@@ -12,3 +12,4 @@
   * [有明确target的]()
     * [Guess Number Higher or Lower](374.Guess Number Higher or Lower.md)
     * [Peak Index in a Mountain Array](852.Peak Index in a Mountain Array.md)
+    * [Valid Perfect Square](367.Valid Perfect Square.md)
