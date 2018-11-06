@@ -24,3 +24,8 @@
     * [Find Smallest Letter Greater Than Target](744. Find Smallest Letter Greater Than Target.md)
     * [Find Peak Element](162. Find Peak Element.md)
     * [Find Minimum in Rotated Sorted Array](153. Find Minimum in Rotated Sorted Array.md)
+* [Backtracking](Backtracking.md)
+  * [subset](78. subset.md)
+  * [Subsets II](90. Subsets II.md)
+  * [Permutations](46. Permutations.md)
+  * [PermutationsII](47. PermutationsII.md)
