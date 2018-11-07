@@ -17,7 +17,7 @@
     * [Sqrt(x).md](69. Sqrt(x).md)
     * [Search in Rotated Sorted Array](33. Search in Rotated Sorted Array.md)
     * [Search in Rotated Sorted Array II](81. Search in Rotated Sorted Array II.md)
-  * [无明确的target或者二分法可能错过target]
+  * [无明确的target或者二分法可能错过target]()
     * [Search Insert Position](35. Search Insert Position.md)
     * [Find First and Last Position of Element in Sorted Array](34. Find First and Last Position of Element in Sorted Array.md)
     * [First Bad Version](278. First Bad Version.md)
@@ -29,3 +29,9 @@
   * [Subsets II](90. Subsets II.md)
   * [Permutations](46. Permutations.md)
   * [PermutationsII](47. PermutationsII.md)
+  * [Combinations](77. Combinations.md)
+  * [Combination Sum](39. Combination Sum.md)
+  * [Combination Sum II](40. Combination Sum II.md)
+  * [Combination Sum III](216. Combination Sum III.md)
+  * [Letter Combinations of a Phone Number](17. Letter Combinations of a Phone Number.md)
+  * [Generate Parentheses](22. Generate Parentheses.md)
