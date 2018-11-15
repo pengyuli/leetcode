@@ -36,4 +36,5 @@
   * [Letter Combinations of a Phone Number](17. Letter Combinations of a Phone Number.md)
   * [Generate Parentheses](22. Generate Parentheses.md)
 * [树的遍历](Tree Traversal.md)
+  * [Binary Tree Preorder Traversal](144. Binary Tree Preorder Traversal.md) 
   * [Binary Tree Inorder Traversal](94. Binary Tree Inorder Traversal.md)
