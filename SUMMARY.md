@@ -41,4 +41,6 @@
   * [Binary Tree Postorder Transversal](145. Binary Tree Postorder Transversal.md)
   * [Binary Tree Level Order Traversal](102. Binary Tree Level Order Traversal.md)
   * [Binary Tree Level Order Traversal II](107. Binary Tree Level Order Traversal II.md)
-  *  [Binary Tree Zigzag Level Order Traversal](103. Binary Tree Zigzag Level Order Traversal.md)
+  * [Binary Tree Zigzag Level Order Traversal](103. Binary Tree Zigzag Level Order Traversal.md)
+* [树的性质]( Solve Tree Problems Recursively.md)
+  * [Maximum Depth of Binary Tree](104. Maximum Depth of Binary Tree.md)
