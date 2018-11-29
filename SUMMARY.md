@@ -44,3 +44,7 @@
   * [Binary Tree Zigzag Level Order Traversal](103. Binary Tree Zigzag Level Order Traversal.md)
 * [树的性质]( Solve Tree Problems Recursively.md)
   * [Maximum Depth of Binary Tree](104. Maximum Depth of Binary Tree.md)
+  * [Minimum Depth of Binary Tree](111. Minimum Depth of Binary Tree.md)
+  * [Balanced Binary Tree](110. Balanced Binary Tree.md)
+  * [Same Tree](100. Same Tree.md)
+  * [Symmetric Tree](101. Symmetric Tree.md)
