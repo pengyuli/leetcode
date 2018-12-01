@@ -33,7 +33,7 @@ class Solution {
         }
         TreeNode node = root;
         while (!s.isEmpty() || node != null) {
-            while (node != null) {
+            if (node != null) {
                 s.push(node);
                 res.add(node.val);
                 node = node.left;
@@ -49,6 +49,7 @@ class Solution {
 
 ### BFS
 适用于自顶向下层序， 自底向上层序和锯齿层序遍历。
+
 ```java
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
