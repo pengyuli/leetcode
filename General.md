@@ -1,5 +1,6 @@
 # General knowledge
 ## Queue
+Queue接口(interface)通常用linkedList类来实现
 - 添加:queue.offer()
 
 - 移除:queue.poll()
@@ -14,3 +15,20 @@ remove() 和 poll() 方法都是从队列中删除第一个元素。如果队列
 
 #### element() 和 peek() ####
 element() 和 peek() 用于在队列的头部查询元素。与 remove() 方法类似，在队列为空时， element() 抛出一个异常，而 peek() 返回 null。
+
+## Stack
+Stack is Class
+- 添加:stack.push()
+
+- 移除:stack.pop()
+
+- 查看:stack.peek()
+
+## Map
+(for i in map.keySet())
+
+map.getOrDefault(map.get(k), 0)
+
+## For loop
+for (char c : prefix.toCharArray())
+char: string 不允许, 需要把string转化成charArray

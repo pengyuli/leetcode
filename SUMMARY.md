@@ -39,7 +39,7 @@
 * [树的遍历](Tree Traversal.md)
   * [Binary Tree Preorder Traversal](144. Binary Tree Preorder Traversal.md)
   * [Binary Tree Inorder Traversal](94. Binary Tree Inorder Traversal.md)
-  * [Binary Tree Postorder Transversal](145. Binary Tree Postorder Transversal.md)
+  * [Binary Tree Postorder Transversal](145. Binary Tree Postorder Traversal.md)
   * [Binary Tree Level Order Traversal](102. Binary Tree Level Order Traversal.md)
   * [Binary Tree Level Order Traversal II](107. Binary Tree Level Order Traversal II.md)
   * [Binary Tree Zigzag Level Order Traversal](103. Binary Tree Zigzag Level Order Traversal.md)
@@ -56,12 +56,28 @@
   * [Path Sum](112. Path Sum.md)
   * [Path Sum II](113. Path Sum II.md)
   * [Sum Root to Leaf Numbers](129. Sum Root to Leaf Numbers.md)
-* [树的构造] (树的构造.md)
+* [树的构造](树的构造.md)
   * [Convert Sorted Array to Binary Search Tree](108. Convert Sorted Array to Binary Search Tree.md)
   * [Convert Sorted List to Binary Search Tree](109. Convert Sorted List to Binary Search Tree.md)
   * [Construct Binary Tree from Preorder and Inorder Traversal](105. Construct Binary Tree from Preorder and Inorder Traversal.md)
   * [Construct Binary Tree from Inorder and Postorder Traversal](106. Construct Binary Tree from Inorder and Postorder Traversal.md)
-* [链表] (LinkedList.md)
+* [二叉查找树] (Binary search Tree.md)
+  * [Validate Binary Search Tree](98. Validate Binary Search Tree.md) 
+  * [Inorder Successor in BST](285. Inorder Successor in BST.md)
+
+  
+  
+* [N-ary Tree](N-ary Tree.md)
+
+  * [N-ary Tree Preorder Traversal](589. N-ary Tree Preorder Traversal.md) 
+  * [N-ary Tree Postorder Traversal](590. N-ary Tree Postorder Traversal.md)
+  * [N-ary Tree Level Order Traversal](429. N-ary Tree Level Order Traversal.md)
+  * [Maximum Depth of N-ary Tree](559. Maximum Depth of N-ary Tree.md)
+
+* [Trie](Trie.md)
+  *[Implement Trie](208. Implement Trie.md)
+  
+* [链表](LinkedList.md)
   * [Reverse Linked List] (206. Reverse Linked List.md) 
   * [Reverse Linked List II] (92. Reverse Linked List II.md)
   * [Remove Linked List Elements] (203. Remove Linked List Elements.md)
@@ -82,3 +98,12 @@
   * [2Sequences]()
      * [Edit Distance](72. Edit Distance.md)
      * [Distinct Subsequences](115. Distinct Subsequences.md)
+     * [Interleaving String](97. Interleaving String.md)
+* [Array]()
+  * [Remove Duplicates from Sorted Array](26. Remove Duplicates from Sorted Array.md)
+* [其他数据结构]()
+   * [Deque](Deque.md)
+   * [PriorityQueue](PriorityQueue.md)
+      * [Kth Largest Element in a Stream](703. Kth Largest Element in a Stream.md)
+      * [Top K Frequent Elements](347. Top K Frequent Elements.md)
+    
