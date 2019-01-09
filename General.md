@@ -27,7 +27,7 @@ Stack is Class
 ## Map
 (for i in map.keySet())
 
-map.getOrDefault(map.get(k), 0)
+map.getOrDefault(k, 0)
 
 ## For loop
 for (char c : prefix.toCharArray())
