@@ -29,6 +29,23 @@ Stack is Class
 
 map.getOrDefault(k, 0)
 
+map.values() 转换成 arrayList ==> new ArrayList(map.values())
+
 ## For loop
 for (char c : prefix.toCharArray())
 char: string 不允许, 需要把string转化成charArray
+
+## Character
+Character.toLowerCase(char)
+Character.isLetterOrDigit
+
+## CovertToInteger问题 
+注意overflow
+
+## String
+string.split("x") 把string以x切割成一个string[]
+String.valueOf(n) 把数字 char 转化成String
+
+## Integer
+Integer.valueOf() string 转化成int
+	
