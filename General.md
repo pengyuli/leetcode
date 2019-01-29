@@ -48,4 +48,5 @@ String.valueOf(n) 把数字 char 转化成String
 
 ## Integer
 Integer.valueOf() string 转化成int
+Integer.toString(int) int to string
 	
