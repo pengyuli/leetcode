@@ -39,7 +39,10 @@ Queue会调用集合中元素所属类的compareTo(Object obj)方法来比较元
                     }
                 });
 	 
-	 
+	```
+	简便的写法
+	```
+	PriorityQueue<Interval> pq = new PriorityQueue<>((a, b) -> a.start - b.start);
 	```
 
 

@@ -45,8 +45,22 @@ Character.isLetterOrDigit
 ## String
 string.split("x") 把string以x切割成一个string[]
 String.valueOf(n) 把数字 char 转化成String
+String.indexof('char') 
+String.replaceAll("a", "b")
+StringBuilder.insert(int, char)
 
 ## Integer
 Integer.valueOf() string 转化成int
 Integer.toString(int) int to string
-	
+
+## Comparator
+
+```Collection.sort((a, b) -> a.start - b.start)```  以start从小到大排序
+
+```
+Collections.sort(intervals, new Comparator<Interval>() {
+            public int compare(Interval i1, Interval i2) {
+                return i1.start - i2.start;
+            }
+        });
+```
