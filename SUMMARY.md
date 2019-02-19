@@ -127,6 +127,7 @@
   * [Group Anagrams](49. Group Anagrams.md)
   * [Missing Ranges](163. Missing Ranges.md)
   * [3Increasing Triplet Subsequence](334. Increasing Triplet Subsequence.md)
+  * [Subarray Sum Equals K](560. Subarray Sum Equals K.md)
 * [String](String.md)
   * [Reverse String](344. Reverse String.md)
   * [Reverse Integer](7. Reverse Integer.md)
