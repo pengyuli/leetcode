@@ -27,7 +27,7 @@
      * [Find Peak Element](162. Find Peak Element.md)
      * [Find Minimum in Rotated Sorted Array](153. Find Minimum in Rotated Sorted Array.md)
 * [Backtracking](Backtracking.md)
-  * [subset](78. subset.md)
+  * [subsets](78. subset.md)
   * [Subsets II](90. Subsets II.md)
   * [Permutations](46. Permutations.md)
   * [PermutationsII](47. PermutationsII.md)
@@ -78,7 +78,7 @@
   * [Maximum Depth of N-ary Tree](559. Maximum Depth of N-ary Tree.md)
 
 * [Trie](Trie.md)
-  *[Implement Trie](208. Implement Trie.md)
+  * [Implement Trie](208. Implement Trie.md)
   
 * [链表](LinkedList.md)
   * [Delete Node in a Linked List](237. Delete Node in a Linked List.md)
@@ -87,6 +87,8 @@
   * [Remove Linked List Elements] (203. Remove Linked List Elements.md)
   * [Add Two Numbers](2. Add Two Numbers.md)
   * [Copy List with Random Pointer](138. Copy List with Random Pointer.md)
+  * [Palindrome Linked List](234. Palindrome Linked List.md)
+  * [Odd Even Linked List](328. Odd Even Linked List.md)
   
   
 * [BFS and DFS] (BFS and DFS.md)
@@ -116,7 +118,7 @@
 * [Array](Array.md)
   * [Remove Duplicates from Sorted Array](26. Remove Duplicates from Sorted Array.md)
   * [Remove Duplicates from Sorted Array II](80. Remove Duplicates from Sorted Array II.md)
-  * [Best Time to Buy and Sell Stock](122. Best Time to Buy and Sell Stock.md)
+  * [Best Time to Buy and Sell Stock](121. Best Time to Buy and Sell Stock.md)
   * [Best Time to Buy and Sell Stock II](122. Best Time to Buy and Sell Stock II.md)
   * [Rotate Array](189. Rotate Array.md)
   * [Contains Duplicate](217. Contains Duplicate.md)
@@ -128,6 +130,7 @@
   * [Missing Ranges](163. Missing Ranges.md)
   * [3Increasing Triplet Subsequence](334. Increasing Triplet Subsequence.md)
   * [Subarray Sum Equals K](560. Subarray Sum Equals K.md)
+  * [Trapping Rain Water](42. Trapping Rain Water.md)
 * [String](String.md)
   * [Reverse String](344. Reverse String.md)
   * [Reverse Integer](7. Reverse Integer.md)

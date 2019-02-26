@@ -52,6 +52,7 @@ StringBuilder.insert(int, char)
 ## Integer
 Integer.valueOf() string 转化成int
 Integer.toString(int) int to string
+Integer.parseInt(number)
 
 ## Comparator
 
@@ -64,3 +65,7 @@ Collections.sort(intervals, new Comparator<Interval>() {
             }
         });
 ```
+
+## Arrays
+把arraylist 转化成list
+Arrays.asList()

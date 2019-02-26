@@ -18,6 +18,7 @@ ListNode node = head;
 
 ### 逐步翻转链表 
 相当于把then节点不停的插在pre的下一个
+
 ```
 ListNode pre = cur;
         ListNode start = pre.next;
@@ -32,13 +33,16 @@ ListNode pre = cur;
 ```
 
 ## 找中点
+
 ```
 while (fast.next != null && fast.next.next != null) {
     fast = fast.next.next;
     slow = slow.next;
 }
-slow之后的就为链表后半部分
 ```
+如果链表是奇数, 那么slow就停在中点上, 这个时候fast.next = null
+如果链表是偶数, 那么slow就停在中点两个靠左边的位置 这个时候fast.next != null
+
 
 ## Dummy Node
 Dummy node 就是在链表表头 head 前加一个节点指向 head，即 dummy -> head。Dummy node 可以保证它永远指向链表的头, 返回的时候可以直接返回dummy的下个节点. 在需要删除表头时候也要从dummy node开始进行操作.
