@@ -25,7 +25,7 @@ Stack is Class
 - 查看:stack.peek()
 
 ## Map
-(for i in map.keySet())
+(for i in **map.keySet()** )
 
 map.getOrDefault(k, 0)
 
@@ -64,6 +64,8 @@ Collections.sort(intervals, new Comparator<Interval>() {
                 return i1.start - i2.start;
             }
         });
+        
+Arrays.sort(intervals, (a,b) -> a.start - b.start);
 ```
 
 ## Arrays
