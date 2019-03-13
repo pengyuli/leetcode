@@ -38,6 +38,7 @@
   * [Letter Combinations of a Phone Number](17. Letter Combinations of a Phone Number.md)
   * [Generate Parentheses](22. Generate Parentheses.md)
   * [Word Search](79. Word Search.md)
+  * [Restore IP Addresses](93. Restore IP Addresses.md)
  
 * [树的遍历](Tree Traversal.md)
   * [Binary Tree Preorder Traversal](144. Binary Tree Preorder Traversal.md)
@@ -59,6 +60,9 @@
   * [Path Sum](112. Path Sum.md)
   * [Path Sum II](113. Path Sum II.md)
   * [Sum Root to Leaf Numbers](129. Sum Root to Leaf Numbers.md)
+  * [Binary Tree Maximum Path Sum](124. Binary Tree Maximum Path Sum.md)
+  * [Count Complete Tree Node](222. Count Complete Tree Nodes.md)
+  * [Merge Two Binary Trees](617. Merge Two Binary Trees.md)
 * [树的构造](树的构造.md)
   * [Convert Sorted Array to Binary Search Tree](108. Convert Sorted Array to Binary Search Tree.md)
   * [Convert Sorted List to Binary Search Tree](109. Convert Sorted List to Binary Search Tree.md)
@@ -104,6 +108,7 @@
   	  * [Decode Ways.md](91. Decode Ways.md)
   	  * [Maximum Subarray](53. Maximum Subarray.md)
   	  * [House Robber](198. House Robber.md)
+  	  * [House Robber II](213. House Robber II.md)
   	  * [Longest Increasing Subsequence](300. Longest Increasing Subsequence.md)
      * [Coin Change](322. Coin Change.md)
      * [Word Break](139. Word Break.md)
@@ -117,6 +122,7 @@
      * [Edit Distance](72. Edit Distance.md)
      * [Distinct Subsequences](115. Distinct Subsequences.md)
      * [Interleaving String](97. Interleaving String.md)
+     * [Maximal Square](221. Maximal Square.md)
 
 * [Array](Array.md)
   * [Remove Duplicates from Sorted Array](26. Remove Duplicates from Sorted Array.md)
