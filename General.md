@@ -44,15 +44,24 @@ Character.isLetterOrDigit
 
 ## String
 string.split("x") 把string以x切割成一个string[]
+
 String.valueOf(n) 把数字 char 转化成String
+
+
 String.indexof('char') 
+
 String.replaceAll("a", "b")
+
 StringBuilder.insert(int, char)
 
 ## Integer
 Integer.valueOf() string 转化成int
+
 Integer.toString(int) int to string
+
 Integer.parseInt(number)
+
+Integer.MAX_VALUE = 2147483647 2billion...
 
 ## Comparator
 
