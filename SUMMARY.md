@@ -56,6 +56,8 @@
   * [Count Univalue Subtrees](250. Count Univalue Subtrees.md)
   * [Populating Next Right Pointers in Each Node](116. Populating Next Right Pointers in Each Node.md)
   *  [Populating Next Right Pointers in Each Node II](117. Populating Next Right Pointers in Each Node II.md)
+  *  [Lowest Common Ancestor of a Binary Tree](236. Lowest Common Ancestor of a Binary Tree.md)
+  *  [Flatten Binary Tree to Linked List](114. Flatten Binary Tree to Linked List.md)
 * [树的求和] ()
   * [Path Sum](112. Path Sum.md)
   * [Path Sum II](113. Path Sum II.md)
@@ -68,9 +70,11 @@
   * [Convert Sorted List to Binary Search Tree](109. Convert Sorted List to Binary Search Tree.md)
   * [Construct Binary Tree from Preorder and Inorder Traversal](105. Construct Binary Tree from Preorder and Inorder Traversal.md)
   * [Construct Binary Tree from Inorder and Postorder Traversal](106. Construct Binary Tree from Inorder and Postorder Traversal.md)
+
 * [二叉查找树] (Binary search Tree.md)
   * [Validate Binary Search Tree](98. Validate Binary Search Tree.md) 
   * [Inorder Successor in BST](285. Inorder Successor in BST.md)
+  * [Lowest Common Ancestor of a Binary Search Tree](235. Lowest Common Ancestor of a Binary Search Tree.md)
 
   
   
@@ -196,6 +200,8 @@
      * [Clone Graph](133. Clone Graph.md) 
      * [Course Schedule](207. Course Schedule .md)
      * [Course Schedule II](210. Course Schedule II.md)
+   * [简单题]()
+     * [Positions of Large Groups](830. Positions of Large Groups.md)
 * [Design]()
    * [LRU Cache](146. LRU Cache.md)
    * [Find Median from Data Stream](295. Find Median from Data Stream.md) 
@@ -203,4 +209,5 @@
 
 * [CodeWars]()
   * [Sum of the first nth term of Series](Sum of the first nth term of Series.md) 
+* [面试细节](面试问题.md)
     

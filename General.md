@@ -80,3 +80,4 @@ Arrays.sort(intervals, (a,b) -> a.start - b.start);
 ## Arrays
 把arraylist 转化成list
 Arrays.asList()
+Arrays.asList(1, 2)->{1,2}
