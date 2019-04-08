@@ -17,3 +17,7 @@ Deque接口是Queue接口的子接口，它代表一个双端队列。LinkedList
 - boolean removeLastOccurrence(Objcet o):     从此列表中移除最后一次出现的指定元素（从头部到尾部遍历列表时）。
 
 ArrayDeque是实现Deque接口的类
+
+```
+Deque<Integer> d = new ArrayDeque<>();
+```

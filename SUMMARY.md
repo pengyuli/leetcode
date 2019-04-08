@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [面试细节](面试问题.md)
 * [General](General.md)
 * [Test](Test.md)
 * [求和问题](求和问题.md)
@@ -126,11 +127,13 @@
      * [Unique Paths I](62. Unique Paths.md)
      * [Unique Paths II](63. Unique Paths II.md)
      * [Minimum Path Sum](64. Minimum Path Sum.md)
+     * [Minimum Falling Path Sum](931. Minimum Falling Path Sum.md)
   * [2Sequences]()
      * [Edit Distance](72. Edit Distance.md)
      * [Distinct Subsequences](115. Distinct Subsequences.md)
      * [Interleaving String](97. Interleaving String.md)
      * [Maximal Square](221. Maximal Square.md)
+     * [Knight Probability in Chessboard](688. Knight Probability in Chessboard.md)
 
 * [Array](Array.md)
   * [Remove Duplicates from Sorted Array](26. Remove Duplicates from Sorted Array.md)
@@ -173,6 +176,8 @@
   * [Decode String](394. Decode String.md)
   * [Integer to English Words](273. Integer to English Words.md)
   * [Verifying an Alien Dictionary](953. Verifying an Alien Dictionary.md)
+  * [String Compression](443. String Compression.md)
+  * [Find and Replace Pattern](890. Find and Replace Pattern.md)
 * [Greedy]()
   * [Jump Game](55. Jump Game.md)
 * [Math]()
@@ -217,5 +222,4 @@
 
 * [CodeWars]()
   * [Sum of the first nth term of Series](Sum of the first nth term of Series.md) 
-* [面试细节](面试问题.md)
     
