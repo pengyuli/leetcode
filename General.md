@@ -44,6 +44,7 @@ Character.isLetterOrDigit
 
 ## String
 string.split("x") 把string以x切割成一个string[]
+string.split("[, . ]") 把string以"," "." " "切割成一个string[]
 
 String.valueOf(n) 把数字 char 转化成String
 
@@ -53,9 +54,12 @@ String.indexof('char')
 String.replaceAll("a", "b")
 
 StringBuilder.insert(int, char)
+string.equals()
+string.equalsIgnoreCase()
 
 ## Integer
 Integer.valueOf() string 转化成int
+String.valueOf() int to string
 
 Integer.toString(int) int to string
 
