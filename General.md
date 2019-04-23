@@ -29,6 +29,8 @@ Stack is Class
 
 map.getOrDefault(k, 0)
 
+map.putIfAbsent(key, value)
+
 map.values() 转换成 arrayList ==> new ArrayList(map.values())
 
 ## For loop
@@ -54,8 +56,12 @@ String.indexof('char')
 String.replaceAll("a", "b")
 
 StringBuilder.insert(int, char)
+
 string.equals()
+
 string.equalsIgnoreCase()
+
+String(charArray)
 
 ## Integer
 Integer.valueOf() string 转化成int
@@ -85,3 +91,4 @@ Arrays.sort(intervals, (a,b) -> a.start - b.start);
 把arraylist 转化成list
 Arrays.asList()
 Arrays.asList(1, 2)->{1,2}
+arraylist.add(0, x) //addFirst

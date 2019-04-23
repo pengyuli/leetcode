@@ -28,17 +28,11 @@
 time O(nlogn) Space O(n)
 ### 代码
 ```
-public class Solution {
-    /**
-     * @param airplanes: An interval array
-     * @return: Count of airplanes are in the sky.
-     */
-    public int countOfAirplanes(List<Interval> airplanes) {
+public int countOfAirplanes(List<Interval> airplanes) {
         if (airplanes == null || airplanes.size() == 0) {
             return 0;
         }
         int count = 0;
-        int max = 0;
         int size = airplanes.size();
         int[] s = new int[size];
         int[] e = new int[size];
@@ -48,18 +42,15 @@ public class Solution {
         }
         Arrays.sort(s);
         Arrays.sort(e);
-        for (int i = 0, j = 0; i <size;) {
-            if (s[i] < e[j]) {
-                i++;
+        int index = 0;
+        for (int i = 0; i < s.length; i++) {
+            if (s[i] < e[index]) {
                 count++;
-                max = Math.max(count, max);
             } else {
-                j++;
-                count--;
+                index++;
             }
         }
-        return max;
+        return count;
     }
 }
-
 ```

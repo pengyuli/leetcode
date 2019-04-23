@@ -1,4 +1,10 @@
 # Union Find
+## 复杂度
+Find: O(ɑ(n))* ≈ O(1)
+
+Union: O(ɑ(n))* ≈ O(1)
+
+Space: O(n)
 ## 模板
 ```
 class UF{
