@@ -92,3 +92,8 @@ Arrays.sort(intervals, (a,b) -> a.start - b.start);
 Arrays.asList()
 Arrays.asList(1, 2)->{1,2}
 arraylist.add(0, x) //addFirst
+arraylist.addAll(another arraylist)//merge two arraylist
+
+## Random
+Random rand=new Random();
+int j=rand.nextInt(100);
