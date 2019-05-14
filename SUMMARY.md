@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [面试细节](面试问题.md)
+* [Englise](English.md)
 * [General](General.md)
 * [Test](Test.md)
 * [求和问题](求和问题.md)
@@ -28,6 +29,10 @@
      * [Find Smallest Letter Greater Than Target](744. Find Smallest Letter Greater Than Target.md)
      * [**Find Peak Element**](162. Find Peak Element.md)
      * [**Find Minimum in Rotated Sorted Array**](153. Find Minimum in Rotated Sorted Array.md)
+     * [154. Find Minimum in Rotated Sorted Array II](154. Find Minimum in Rotated Sorted Array II.md)
+     * [Find K Closest Elements](658. Find K Closest Elements.md)
+     * [[LintCode]586. Sqrt(x) II]([LintCode]586. Sqrt(x) II .md)
+     * [[LintCode]437. Copy Books]([LintCode] 437. Copy Books.md)
 * [**Backtracking**](Backtracking.md)
   * [subsets](78. subset.md)
   * [Subsets II](90. Subsets II.md)
@@ -84,6 +89,7 @@
 		* [Search in a Binary Search Tree](700. Search in a Binary Search Tree.md)
 		* [Insert into a Binary Search Tree](701. Insert into a Binary Search Tree.md)
 		* [Delete Node in a BST](450. Delete Node in a BST.md)
+		* [Binary Search Tree Iterator](173. Binary Search Tree Iterator.md)
 	
   * [Validate Binary Search Tree](98. Validate Binary Search Tree.md) 
   * [**Inorder Successor in BST**](285. Inorder Successor in BST.md)
@@ -98,10 +104,7 @@
   * [N-ary Tree Level Order Traversal](429. N-ary Tree Level Order Traversal.md)
   * [**Maximum Depth of N-ary Tree**](559. Maximum Depth of N-ary Tree.md)
 
-* [Trie](Trie.md)
-  * [Implement Trie](208. Implement Trie.md)
-  * [Map Sum Pairs](677. Map Sum Pairs.md)
-  * [Replace Words](648. Replace Words.md)
+
   
 * [链表](LinkedList.md)
   * [Delete Node in a Linked List](237. Delete Node in a Linked List.md)
@@ -175,6 +178,7 @@
   		* [**Minimum Size Subarray Sum**](209. Minimum Size Subarray Sum.md)
   		* [Maximum Size Subarray Sum Equals k](325. Maximum Size Subarray Sum Equals k.md)
   		* [**Subarray Sum Equals K**](560. Subarray Sum Equals K.md)
+  		* [[Lintcode]139. Subarray Sum Closest]([Lintcode]139. Subarray Sum Closest .md)
 * [String](String.md)
   * [Reverse String](344. Reverse String.md)
   * [Reverse Integer](7. Reverse Integer.md)
@@ -196,6 +200,15 @@
   * [String Compression](443. String Compression.md)
   * [Find and Replace Pattern](890. Find and Replace Pattern.md)
   * [String to Integer (atoi)](8. String to Integer (atoi).md)
+  * [Robot Return to Origin](657. Robot Return to Origin.md)
+  
+  * [Trie](Trie.md)
+  		* [Implement Trie](208. Implement Trie.md)
+  		* [Map Sum Pairs](677. Map Sum Pairs.md)
+  		* [Replace Words](648. Replace Words.md)
+  		* [Word Search II](212. Word Search II.md)
+  		* [Add and Search Word - Data structure design](211. Add and Search Word - Data structure design.md)
+  	
 * [Greedy]()
   * [Jump Game](55. Jump Game.md)
 * [Math]()
@@ -204,6 +217,7 @@
   * [Task Scheduler](621. Task Scheduler.md)
   * [Power of Two](231. Power of Two.md)
   * [Fraction to Recurring Decimal](166. Fraction to Recurring Decimal.md)
+  * [Best Meeting Point](296. Best Meeting Point.md)
 * [Slidig window]() 
   * [Fruit Into Baskets](904. Fruit Into Baskets.md)
   * [Longest Substring with At Most Two Distinct Characters](159. Longest Substring with At Most Two Distinct Characters.md)
@@ -217,6 +231,8 @@
       * [Merge Intervals](56. Merge Intervals.md)
       * [Kth Largest Element in an Array](215. Kth Largest Element in an Array.md)
       * [Merge k Sorted Lists](23. Merge k Sorted Lists.md)
+      * [Find Median from Data Stream](295. Find Median from Data Stream.md)
+      * [Sliding Window Median](480. Sliding Window Median.md)
    * [Stack]()
       * [Valid Parentheses](20. Valid Parentheses.md)
       * [Largest Rectangle in Histogram](84. Largest Rectangle in Histogram.md)
@@ -238,7 +254,6 @@
      * [Positions of Large Groups](830. Positions of Large Groups.md)
 * [Design]()
    * [LRU Cache](146. LRU Cache.md)
-   * [Find Median from Data Stream](295. Find Median from Data Stream.md) 
    * [Insert Delete GetRandom O(1)](380. Insert Delete GetRandom O(1).md)
 
 * [CodeWars]()
