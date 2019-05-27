@@ -49,6 +49,8 @@
   * [Restore IP Addresses](93. Restore IP Addresses.md)
   * [N-Queens](51. N-Queens.md)
   * [N-Queens II](52. N-Queens II.md)
+  * [Expression Add Operators](282. Expression Add Operators.md)
+  * [Palindrome Partitioning](131. Palindrome Partitioning.md)
  
 * [树的遍历](Tree Traversal.md)
   * [Binary Tree Preorder Traversal](144. Binary Tree Preorder Traversal.md)
@@ -85,7 +87,7 @@
   * [Construct Binary Tree from Inorder and Postorder Traversal](106. Construct Binary Tree from Inorder and Postorder Traversal.md)
   * [Construct Quad Tree](427. Construct Quad Tree.md)
 
-* [二叉查找树] (Binary search Tree.md)
+* [二叉查找树](Binary search Tree.md)
 	* [BST基本性质]()
 		* [Search in a Binary Search Tree](700. Search in a Binary Search Tree.md)
 		* [Insert into a Binary Search Tree](701. Insert into a Binary Search Tree.md)
@@ -119,7 +121,7 @@
   * [Remove Nth Node From End of List](19. Remove Nth Node From End of List.md)
   
   
-* [BFS and DFS] (BFS and DFS.md)
+* [BFS and DFS](BFS and DFS.md)
   * [Walls and Gates](286. Walls and Gates.md) 
   * [Number of Islands](200. Number of Islands.md)
   * [Open the Lock](752. Open the Lock.md)
@@ -156,6 +158,7 @@
      * [**Interleaving String**](97. Interleaving String.md)
      * [Maximal Square](221. Maximal Square.md)
      * [Knight Probability in Chessboard](688. Knight Probability in Chessboard.md)
+     * [Palindrome Partitioning II](132. Palindrome Partitioning II.md)
 
 * [Array](Array.md)
   * [Remove Duplicates from Sorted Array](26. Remove Duplicates from Sorted Array.md)

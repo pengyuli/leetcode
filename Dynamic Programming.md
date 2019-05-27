@@ -30,7 +30,9 @@
 - answer: 终点
 
 #### Sequence Dp
-- state: f[i]表示“ 前i”个位置/数字/字母,(以第i个为)...
+- state: f[i]表示 :
+	1. “ 前i”个位置/数字/字母的xxx
+	2. 以第i个 结尾的xxx
 - function: f[i] = f[j] … j 是i之前的一个位置
 - intialize: f[0]..
 - answer: f[n-1]..
