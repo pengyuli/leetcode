@@ -9,6 +9,7 @@ Space: O(n)
 ```
 class UF{
     int[] parent;
+    // Map<Integer, Integer> parent;
     int[] rank;
     
     public UF(int size) {
@@ -24,6 +25,10 @@ class UF{
             parent[x] = find(parent[x]);
         }
         return parent[x];
+        
+        // fa = find(parent.get(x));
+        // parent.put(x, fa);
+        // return fa; 
     }
     public void union(int x, int y) {
         int xr = find(x);
