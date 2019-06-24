@@ -226,6 +226,8 @@
   * [String to Integer (atoi)](8. String to Integer (atoi).md)
   * [Robot Return to Origin](657. Robot Return to Origin.md)
   * [Roman to Integer](13. Roman to Integer.md)
+  * [Read N Characters Given Read4](157. Read N Characters Given Read4.md)
+  * [Read N Characters Given Read4 II - Call multiple times](158. Read N Characters Given Read4 II - Call multiple times.md)
   
   * [**Sliding window substring类**]()
   		* [Minimum Window Substring](76. Minimum Window Substring.md) 
@@ -262,6 +264,7 @@
       * [Merge k Sorted Lists](23. Merge k Sorted Lists.md)
       * [Find Median from Data Stream](295. Find Median from Data Stream.md)
       * [Sliding Window Median](480. Sliding Window Median.md)
+      * [Design Search Autocomplete System](642. Design Search Autocomplete System.md)
    	   * [Intervel]()
    	 		* [Merge Intervals](56. Merge Intervals.md)
    * [Stack]()
@@ -270,6 +273,8 @@
       * [Maximal Rectangle](85. Maximal Rectangle.md)
       * [Evaluate Reverse Polish Notation](150. Evaluate Reverse Polish Notation.md)
       * [Min Stack](155. Min Stack.md)
+      * [Max Stack](716. Max Stack.md)
+      * [Asteroid Collision](735. Asteroid Collision.md)
   
    * [HashTable]()
      * [Jewels and Stones](771. Jewels and Stones.md)
@@ -279,6 +284,7 @@
 	     * [Course Schedule](207. Course Schedule .md)
 	     * [Course Schedule II](210. Course Schedule II.md)
 	     * [Course Schedule IV]([Lintcode]Course Schedule IV .md)
+	     * [Alien Dictionary](269. Alien Dictionary.md)
      * [Union Find](Union Find.md)
      	 * [Redundant Connection](684. Redundant Connection.md)
      	 * friend circle 
@@ -299,8 +305,13 @@
 
 
 ## System Design
-* [SQL VS NoSQL](SQL VS NoSQL.md)
+* [System Design Basics](SystemDesignBasics.md)
 * [Design Message System](Design Message System.md)
+* [Design User Service](UserService.md)
+* [Tiny URL](Tiny URL.md)
+* [Design Uber](Design Uber.md)
+* [Design RateLimiter/Data Dog](Design RateLimiter.md)
+* [Design Web Crawler](Design Web Crawler.md)
 
 
     

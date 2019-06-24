@@ -7,6 +7,9 @@
 3. group chat
 4. user status(online/ offline)
 
+Thing to notice:
+facebook messenger一直保存聊天记录 而whatsapp wechat一旦用户接受了就删除聊天信息
+
 ### DAU QPS
 
 ## Service
@@ -54,13 +57,14 @@ Receive
 - Push 创建一个push Service(Real time Service 一部分), push servie 和client通过socket想联通, message service通过push service把message传递给client
 
 
-#### Online Status table
-|userId |Last_time|
-|---|---|
+#### Online Status table (Cache)
+|userId |Last_time|Server connected|
+|----|----|----|
 
-维护一个last seen service
-- 用户上线以后每隔2-5秒向server heart beaty一次
+维护一个heart beat service
+- 用户上线以后每隔2-5秒向server heart beat一次
 - 在线好友每隔3-5秒向server要一次大家的状态
+- cache里还存着那个server和user相连, 这样当需要push信息to user时候知道通过哪个server和user相连
 
 
 ## Scale 
