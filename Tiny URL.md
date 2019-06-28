@@ -16,6 +16,8 @@ peak QPS = QPS * 3 = 3000;
 假设一条url 0.1k 
 0.1k*100M = 1GB 的data
 
+读>>写, 要用cache优化
+
 
 ## Service 
 
@@ -38,6 +40,8 @@ Database :
 
 DataBse:
 因为用sequence ID 所以必须SQL
+#### ZooKepper
+用zookepper把一共能生成的url个数, 划分为n个区, 然后每个host去拿一个区域, 然后做+1生成url. 如果用完了再去拿
 
 ## Scale
 CDN cache

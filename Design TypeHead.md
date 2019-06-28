@@ -9,13 +9,7 @@ QPS = 12b/86400 = 138K
 
 Peak = QPS * 3 = 414
 
-## Service
 
-### Query Service
-返回每次request 请求
-
-### DataCollection Service
-统计热门词
 
 
 ## Storage
@@ -23,6 +17,7 @@ Peak = QPS * 3 = 414
 
 |prefix|count|
 |----|----|
+
 
 方法1:
 
@@ -38,12 +33,22 @@ Trie放到query service里.
 
 定期把dataColeectionService里的更新的关键词建trie, 存入host
 
+## Service
+
+### Query Service
+去trie里查找, 返回最高频词
+### DataCollection Service
+把统计好的热门词, 生成一个trie,然后upload 到queryService
+
 ## Scale
 #### 如果内存装不下?
 1. 每个queryService分为小trie
 2. 用prefix算hash, 用constant hashing 方法, 存trie
 
-#### collection Service手机数据
+#### 提高速度
+在local CDN加cache
+
+#### collection Service收集数据
 1. 不记录所有的 而是每次用户搜索关键词 1~1000随机抽取一个数, 如果是1才存, 这样减少了1000倍的写操作.
 
 

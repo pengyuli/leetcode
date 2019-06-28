@@ -30,6 +30,7 @@ facebook messenger一直保存聊天记录 而whatsapp wechat一旦用户接受�
 |Id|Thread_Id|user_ID|content|Time|
 |----|----|----|----|----|
 |Int|int|string|text|time|
+| | |谁发的|内容| |
 
 #### Thread table (SQL)
 - UseCase: 
@@ -38,9 +39,10 @@ facebook messenger一直保存聊天记录 而whatsapp wechat一旦用户接受�
 - RowKey user_ID, ThreadID
 - columnKey user_ID+last_update_time
 
-|Thread ID|UserID|participant_ids|Created_time|Last_update_time|
-| ---- | ---- | ----| ---- |---|
+|Thread ID|UserID|participant_ids|Created_time|Last_update_time|is_muted|isblock|
+| ---- | ---- | ----| ---- |---|---|---|
 |int|string|text|time|time|
+| ---- | 谁的thread | ----| ---- |index= true|---|---|
 
 但是我们需要支持对于一个用户, 查询他所在的所有thread(登录app界面), 所以要么把user_ID也加入thread table, 让key变成user_id+thread_ID这样一个thread存n份, 或者另起一个user-Trhead table里面记录user和thread的对应关系.
 
