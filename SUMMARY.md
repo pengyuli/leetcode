@@ -28,7 +28,7 @@
      * [Random Pick with Weight](528. Random Pick with Weight.md)
      * [Find the Duplicate Number](287. Find the Duplicate Number.md)
   * [无明确的target或者二分法可能错过target]()
-     * [[LintCode]Sqrt(x) II](Sqrt(x) II.md) 
+     * [[LintCode]Sqrt(x) II](Sqrt(x) II.md)
      * [Search Insert Position](35. Search Insert Position.md)
      * [Find First and Last Position of Element in Sorted Array](34. Find First and Last Position of Element in Sorted Array.md)
      * [First Bad Version](278. First Bad Version.md)
@@ -56,7 +56,7 @@
   * [N-Queens II](52. N-Queens II.md)
   * [Expression Add Operators](282. Expression Add Operators.md)
   * [Palindrome Partitioning](131. Palindrome Partitioning.md)
- 
+
 * [树的遍历](Tree Traversal.md)
   * [Binary Tree Preorder Traversal](144. Binary Tree Preorder Traversal.md)
   * [Binary Tree Inorder Traversal](94. Binary Tree Inorder Traversal.md)
@@ -103,25 +103,25 @@
 		* [**Serialize and Deserialize BST**](449. Serialize and Deserialize BST.md)
   * [Closest Binary Search Tree Value](270. Closest Binary Search Tree Value.md)
   * [Closest Binary Search Tree Value II](272. Closest Binary Search Tree Value II.md)
-	
-  * [Validate Binary Search Tree](98. Validate Binary Search Tree.md) 
+
+  * [Validate Binary Search Tree](98. Validate Binary Search Tree.md)
   * [**Inorder Successor in BST**](285. Inorder Successor in BST.md)
   * [Lowest Common Ancestor of a Binary Search Tree](235. Lowest Common Ancestor of a Binary Search Tree.md)
 
-  
-  
+
+
 * [N-ary Tree](N-ary Tree.md)
 
-  * [N-ary Tree Preorder Traversal](589. N-ary Tree Preorder Traversal.md) 
+  * [N-ary Tree Preorder Traversal](589. N-ary Tree Preorder Traversal.md)
   * [N-ary Tree Postorder Traversal](590. N-ary Tree Postorder Traversal.md)
   * [N-ary Tree Level Order Traversal](429. N-ary Tree Level Order Traversal.md)
   * [**Maximum Depth of N-ary Tree**](559. Maximum Depth of N-ary Tree.md)
 
 
-  
+
 * [链表](LinkedList.md)
   * [Delete Node in a Linked List](237. Delete Node in a Linked List.md)
-  * [Reverse Linked List](206. Reverse Linked List.md) 
+  * [Reverse Linked List](206. Reverse Linked List.md)
   * [Reverse Linked List II](92. Reverse Linked List II.md)
   * [Remove Linked List Elements](203. Remove Linked List Elements.md)
   * [Add Two Numbers](2. Add Two Numbers.md)
@@ -129,10 +129,10 @@
   * [Palindrome Linked List](234. Palindrome Linked List.md)
   * [Odd Even Linked List](328. Odd Even Linked List.md)
   * [Remove Nth Node From End of List](19. Remove Nth Node From End of List.md)
-  
-  
+
+
 * [BFS and DFS](BFS and DFS.md)
-  * [Walls and Gates](286. Walls and Gates.md) 
+  * [Walls and Gates](286. Walls and Gates.md)
   * [Number of Islands](200. Number of Islands.md)
   * [Flood Fill](733. Flood Fill.md)
   * [Open the Lock](752. Open the Lock.md)
@@ -144,21 +144,21 @@
   * [**Reconstruct Itinerary???**](332. Reconstruct Itinerary.md)
   * [Surrounded Regions](130. Surrounded Regions.md)
   * [Memorization]()
-  	  * [Word Break II.md](140. Word Break II.md) 
- 
+  	 * [Word Break II.md](140. Word Break II.md)
+
 * [Dynamic Programming](Dynamic Programming.md)
   * [1Sequence]()
-  	  * [Climbing Stairs](70. Climbing Stairs.md)
-  	  * [Decode Ways.md](91. Decode Ways.md)
-  	  * [Maximum Subarray](53. Maximum Subarray.md)
-  	  * [House Robber](198. House Robber.md)
-  	  * [House Robber II](213. House Robber II.md)
-  	  * [**Longest Increasing Subsequence**](300. Longest Increasing Subsequence.md)
+  	 * [Climbing Stairs](70. Climbing Stairs.md)
+  	 * [Decode Ways.md](91. Decode Ways.md)
+  	 * [Maximum Subarray](53. Maximum Subarray.md)
+  	 * [House Robber](198. House Robber.md)
+  	 * [House Robber II](213. House Robber II.md)
+  	 * [**Longest Increasing Subsequence**](300. Longest Increasing Subsequence.md)
      * [**Coin Change**](322. Coin Change.md)
      * [**Word Break**](139. Word Break.md)
      * [Maximum Product Subarray](152. Maximum Product Subarray.md)
   * [Matrix]()
-     * [Triangle](120. Triangle.md) 
+     * [Triangle](120. Triangle.md)
      * [Unique Paths I](62. Unique Paths.md)
      * [Unique Paths II](63. Unique Paths II.md)
      * [Minimum Path Sum](64. Minimum Path Sum.md)
@@ -202,11 +202,11 @@
   * [Search a 2D Matrix II](240. Search a 2D Matrix II.md)
   * [Design Tic-Tac-Toe](348. Design Tic-Tac-Toe.md)
   * [subarray问题]()
-  		* [**Minimum Size Subarray Sum**](209. Minimum Size Subarray Sum.md)
-  		* [**Maximum Size Subarray Sum Equals k**](325. Maximum Size Subarray Sum Equals k.md)
-  		* [**Subarray Sum Equals K**](560. Subarray Sum Equals K.md)
-  		* [[Lintcode]139. Subarray Sum Closest]([Lintcode]139. Subarray Sum Closest .md)
-  		* [Subarray Sums Divisible by K](974. Subarray Sums Divisible by K.md)
+  	* [**Minimum Size Subarray Sum**](209. Minimum Size Subarray Sum.md)
+  	* [**Maximum Size Subarray Sum Equals k**](325. Maximum Size Subarray Sum Equals k.md)
+  	* [**Subarray Sum Equals K**](560. Subarray Sum Equals K.md)
+  	* [[Lintcode]139. Subarray Sum Closest]([Lintcode]139. Subarray Sum Closest .md)
+  	* [Subarray Sums Divisible by K](974. Subarray Sums Divisible by K.md)
 * [String](String.md)
   * [Reverse String](344. Reverse String.md)
   * [Reverse Integer](7. Reverse Integer.md)
@@ -234,20 +234,20 @@
   * [Read N Characters Given Read4 II - Call multiple times](158. Read N Characters Given Read4 II - Call multiple times.md)
   * [Remove Comments](722. Remove Comments.md)
   * [Reorder Log Files](937. Reorder Log Files.md)
-  
+
   * [**Sliding window substring类**]()
-  		* [Minimum Window Substring](76. Minimum Window Substring.md) 
-  		* [Longest Substring Without Repeating Characters](3. Longest Substring Without Repeating Characters.md)
-  		* [Longest Substring with At Most Two Distinct Characters](159. Longest Substring with At Most Two Distinct Characters.md)
-  		* [Longest Substring with At Most K Distinct Characters](340. Longest Substring with At Most K Distinct Characters.md)
-  
+  	* [Minimum Window Substring](76. Minimum Window Substring.md)
+  	* [Longest Substring Without Repeating Characters](3. Longest Substring Without Repeating Characters.md)
+  	* [Longest Substring with At Most Two Distinct Characters](159. Longest Substring with At Most Two Distinct Characters.md)
+  	* [Longest Substring with At Most K Distinct Characters](340. Longest Substring with At Most K Distinct Characters.md)
+
   * [Trie](Trie.md)
-  		* [Implement Trie](208. Implement Trie.md)
-  		* [**Map Sum Pairs**](677. Map Sum Pairs.md)
-  		* [Replace Words](648. Replace Words.md)
-  		* [Word Search II](212. Word Search II.md)
-  		* [Add and Search Word - Data structure design](211. Add and Search Word - Data structure design.md)
-  	
+  	* [Implement Trie](208. Implement Trie.md)
+  	* [**Map Sum Pairs**](677. Map Sum Pairs.md)
+  	* [Replace Words](648. Replace Words.md)
+  	* [Word Search II](212. Word Search II.md)
+  	* [Add and Search Word - Data structure design](211. Add and Search Word - Data structure design.md)
+
 * [Greedy]()
   * [Jump Game](55. Jump Game.md)
 * [Math]()
@@ -257,7 +257,7 @@
   * [Power of Two](231. Power of Two.md)
   * [Fraction to Recurring Decimal](166. Fraction to Recurring Decimal.md)
   * [Best Meeting Point](296. Best Meeting Point.md)
-* [**Slidig window**]() 
+* [**Slidig window**]()
   * [Fruit Into Baskets](904. Fruit Into Baskets.md)
   * [Container With Most Water](11. Container With Most Water.md)
 * [其他数据结构]()
@@ -271,8 +271,8 @@
       * [Find Median from Data Stream](295. Find Median from Data Stream.md)
       * [Sliding Window Median](480. Sliding Window Median.md)
       * [Design Search Autocomplete System](642. Design Search Autocomplete System.md)
-   	   * [Intervel]()
-   	 		* [Merge Intervals](56. Merge Intervals.md)
+   * [Intervel]()
+   	 * [Merge Intervals](56. Merge Intervals.md)
    * [Stack]()
       * [Valid Parentheses](20. Valid Parentheses.md)
       * [Largest Rectangle in Histogram](84. Largest Rectangle in Histogram.md)
@@ -281,28 +281,28 @@
       * [Min Stack](155. Min Stack.md)
       * [Max Stack](716. Max Stack.md)
       * [Asteroid Collision](735. Asteroid Collision.md)
-  
+
    * [HashTable]()
-     	* [Jewels and Stones](771. Jewels and Stones.md)
+     * [Jewels and Stones](771. Jewels and Stones.md)
    * [Deque]()
-   	  	* [Sliding Window Maximum](239. Sliding Window Maximum.md)
+   	 * [Sliding Window Maximum](239. Sliding Window Maximum.md)
 	* [TreeMap](TreeMap.md)
    		* [Odd Even Jump](975. Odd Even Jump.md)
    		* [Find Right Interval](436. Find Right Interval.md)
 * [Graph]()
-     * [Clone Graph](133. Clone Graph.md) 
- * [拓扑排序]()
+     * [Clone Graph](133. Clone Graph.md)
+* [拓扑排序]()
      * [Course Schedule](207. Course Schedule .md)
      * [Course Schedule II](210. Course Schedule II.md)
      * [Course Schedule IV]([Lintcode]Course Schedule IV .md)
      * [Alien Dictionary](269. Alien Dictionary.md)
-	  
- * [Union Find](Union Find.md)
- 	 	* [Redundant Connection](684. Redundant Connection.md)
- 	 	* friend circle 
- 	 	* [Graph Valid Tree](261. Graph Valid Tree.md)
- 	 	* [Number of Islands II](305. Number of Islands II.md)
-   * [扫描线算法]()
+
+* [Union Find](Union Find.md)
+ 	* [Redundant Connection](684. Redundant Connection.md)
+ 	* friend circle
+ 	* [Graph Valid Tree](261. Graph Valid Tree.md)
+ 	* [Number of Islands II](305. Number of Islands II.md)
+* [扫描线算法]()
      * [Meeting Rooms](252. Meeting Rooms.md)
      * [Meeting Rooms II](253. Meeting Rooms II.md)
      * [[Lintcode]391. Number of Airplanes in the Sky]([Lintcode]391. Number of Airplanes in the Sky.md)
@@ -313,7 +313,7 @@
    * [Insert Delete GetRandom O(1)](380. Insert Delete GetRandom O(1).md)
 
 * [CodeWars]()
-  * [Sum of the first nth term of Series](Sum of the first nth term of Series.md) 
+  * [Sum of the first nth term of Series](Sum of the first nth term of Series.md)
 
 
 ## System Design
@@ -326,6 +326,3 @@
 * [Design RateLimiter/Data Dog](Design RateLimiter.md)
 * [Design TypeHead](Design TypeHead.md)
 * [Design Web Crawler](Design Web Crawler.md)
-
-
-    
