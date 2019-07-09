@@ -33,6 +33,13 @@ map.putIfAbsent(key, value)
 
 map.values() 转换成 arrayList ==> new ArrayList(map.values())
 
+map.entrySet()
+
+Map.Entry<obj, obj>
+
+Map.Entry.getKey()
+
+Map.Entry.getValue()
 ## For loop
 for (char c : prefix.toCharArray())
 char: string 不允许, 需要把string转化成charArray

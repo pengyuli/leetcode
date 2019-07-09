@@ -234,7 +234,12 @@
   * [Read N Characters Given Read4 II - Call multiple times](158. Read N Characters Given Read4 II - Call multiple times.md)
   * [Remove Comments](722. Remove Comments.md)
   * [Reorder Log Files](937. Reorder Log Files.md)
+<<<<<<< HEAD
 
+=======
+  * [Remove Invalid Parentheses](301. Remove Invalid Parentheses.md)
+  
+>>>>>>> 9080482... update
   * [**Sliding window substring类**]()
   	* [Minimum Window Substring](76. Minimum Window Substring.md)
   	* [Longest Substring Without Repeating Characters](3. Longest Substring Without Repeating Characters.md)
@@ -270,9 +275,15 @@
       * [Merge k Sorted Lists](23. Merge k Sorted Lists.md)
       * [Find Median from Data Stream](295. Find Median from Data Stream.md)
       * [Sliding Window Median](480. Sliding Window Median.md)
+<<<<<<< HEAD
       * [Design Search Autocomplete System](642. Design Search Autocomplete System.md)
    * [Intervel]()
    	 * [Merge Intervals](56. Merge Intervals.md)
+=======
+      * [Top K Frequent Words](692. Top K Frequent Words.md)
+   	   * [Intervel]()
+   	 		* [Merge Intervals](56. Merge Intervals.md)
+>>>>>>> 9080482... update
    * [Stack]()
       * [Valid Parentheses](20. Valid Parentheses.md)
       * [Largest Rectangle in Histogram](84. Largest Rectangle in Histogram.md)
@@ -289,6 +300,7 @@
 	* [TreeMap](TreeMap.md)
    		* [Odd Even Jump](975. Odd Even Jump.md)
    		* [Find Right Interval](436. Find Right Interval.md)
+   		* [Time Based Key-Value Store](981. Time Based Key-Value Store.md)
 * [Graph]()
      * [Clone Graph](133. Clone Graph.md)
 * [拓扑排序]()
@@ -311,10 +323,11 @@
 * [Design]()
    * [LRU Cache](146. LRU Cache.md)
    * [Insert Delete GetRandom O(1)](380. Insert Delete GetRandom O(1).md)
-
+   * [Design Search Autocomplete System](642. Design Search Autocomplete System.md)
+* [If you know you know]()
+	* [Pour Water](755. Pour Water.md)
 * [CodeWars]()
   * [Sum of the first nth term of Series](Sum of the first nth term of Series.md)
-
 
 ## System Design
 * [System Design Basics](SystemDesignBasics.md)
