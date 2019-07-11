@@ -6,6 +6,7 @@
 2. 1:1 chat -> (nickName, Mute)*
 3. group chat
 4. user status(online/ offline)
+5. message sent/read/delivered
 
 Thing to notice:
 facebook messenger一直保存聊天记录 而whatsapp wechat一旦用户接受了就删除聊天信息
@@ -18,7 +19,7 @@ facebook messenger一直保存聊天记录 而whatsapp wechat一旦用户接受�
 
 - Real time service
 
-## Storage 
+## Storage
 因为如果把所有信息都存在message table会导致查询非常慢(比如查询两个人的聊天记录, 群里所有聊天记录), 所以对于message system把一个对话存为一个Thread.
 #### Message table(NoSQL)
 - UserCase: use threadId to get all message in thread and rank in time
@@ -33,7 +34,7 @@ facebook messenger一直保存聊天记录 而whatsapp wechat一旦用户接受�
 | | |谁发的|内容| |
 
 #### Thread table (SQL)
-- UseCase: 
+- UseCase:
 	1. 按照thread_ID 拿到所有消息(进入thread)
 	2. 查询user_ID所有的thread()
 - RowKey user_ID, ThreadID
@@ -52,7 +53,7 @@ Send:
 - client把消息内容和接受者发给server
 - server先查看thead存在/创建thread (因为这里thred table不支持根据user来找thread, 这里可以把thread_ID 设为userA_userB, 这样就可以根据thread_ID 查找了)
 - 创建一条message
-	
+
 Receive
 
 - Pull 每隔n秒向服务器pull一下messgge
@@ -69,7 +70,7 @@ Receive
 - cache里还存着那个server和user相连, 这样当需要push信息to user时候知道通过哪个server和user相连
 
 
-## Scale 
+## Scale
 #### Group Message
 因为如果用push model,会有好多人不在线, 群体push load大, 但是效率又低. 所以可以增加一个channel service, 在线的用户就订阅到channel上面. CHannel service 数据用cache存储
 
@@ -78,10 +79,3 @@ Receive
 如果用户断线, push service通知channel service把用户移除
 
 MessageService --> channel service --> pushService
-
-
-
-
-
-
-
