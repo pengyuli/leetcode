@@ -274,6 +274,7 @@
       * [Top K Frequent Words](692. Top K Frequent Words.md)
       * [Sliding Window Median](480. Sliding Window Median.md)
       * [Design Search Autocomplete System](642. Design Search Autocomplete System.md)
+      * [Employee Free Time.md](759. Employee Free Time.md)
    * [Intervel]()
    	 * [Merge Intervals](56. Merge Intervals.md)
 
