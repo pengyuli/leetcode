@@ -105,6 +105,8 @@ arraylist.add(0, x) //addFirst
 
 arraylist.addAll(another arraylist)//merge two arraylist
 
+常用 (array.length + 1) /2 来判断边界
+
 ## Random
 Random rand=new Random();
 
