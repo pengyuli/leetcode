@@ -12,7 +12,7 @@ Thing to notice:
 facebook messenger一直保存聊天记录 而whatsapp wechat一旦用户接受了就删除聊天信息
 
 ### DAU QPS
-
+How many chat servers we need? Let’s plan for 500 million connections at any time. Assuming a modern server can handle 50K concurrent connections at any time, we would need 10K such servers.
 ## Service
 
 - Message Service
