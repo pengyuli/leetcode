@@ -288,12 +288,13 @@
       * [Min Stack](155. Min Stack.md)
       * [Max Stack](716. Max Stack.md)
       * [Asteroid Collision](735. Asteroid Collision.md)
-
+      * [Basic Calculator](224. Basic Calculator.md)
+      
    * [HashTable]()
      * [Jewels and Stones](771. Jewels and Stones.md)
    * [Deque]()
-   	 * [Sliding Window Maximum](239. Sliding Window Maximum.md)
-	* [TreeMap](TreeMap.md)
+		 * [Sliding Window Maximum](239. Sliding Window Maximum.md)
+   * [TreeMap](TreeMap.md)
    		* [Odd Even Jump](975. Odd Even Jump.md)
    		* [Find Right Interval](436. Find Right Interval.md)
    		* [Time Based Key-Value Store](981. Time Based Key-Value Store.md)
