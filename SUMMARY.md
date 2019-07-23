@@ -116,7 +116,7 @@
   * [N-ary Tree Preorder Traversal](589. N-ary Tree Preorder Traversal.md)
   * [N-ary Tree Postorder Traversal](590. N-ary Tree Postorder Traversal.md)
   * [N-ary Tree Level Order Traversal](429. N-ary Tree Level Order Traversal.md)
-  * [**Maximum Depth of N-ary Tree**](559. Maximum Depth of N-ary Tree.md)
+  * [**Maxim um Depth of N-ary Tree**](559. Maximum Depth of N-ary Tree.md)
 
 
 
@@ -138,7 +138,7 @@
   * [Flood Fill](733. Flood Fill.md)
   * [Open the Lock](752. Open the Lock.md)
   * [Target Sum](494. Target Sum.md)
-  * [**Max Area of Island**](695. Max Area of Island.md)
+  * [Max Area of Island](695. Max Area of Island.md)
   * [Friend Circles](547. Friend Circles.md)
   * [The Maze](490. The Maze.md)
   * [Word Ladder](127. Word Ladder.md)
@@ -206,18 +206,19 @@
   * [subarray问题]()
   	* [**Minimum Size Subarray Sum**](209. Minimum Size Subarray Sum.md)
   	* [**Maximum Size Subarray Sum Equals k**](325. Maximum Size Subarray Sum Equals k.md)
-  	* [**Subarray Sum Equals K**](560. Subarray Sum Equals K.md)
-  	* [[Lintcode]139. Subarray Sum Closest]([Lintcode]139. Subarray Sum Closest .md)
-  	* [Subarray Sums Divisible by K](974. Subarray Sums Divisible by K.md)
+  	* [Subarray Sum Equals K](560. Subarray Sum Equals K.md)
+  	* [**[Lintcode]139. Subarray Sum Closest**]([Lintcode]139. Subarray Sum Closest .md)
+  	* [**Subarray Sums Divisible by K**](974. Subarray Sums Divisible by K.md)
 * [String](String.md)
+  
   * [Reverse String](344. Reverse String.md)
   * [Reverse Integer](7. Reverse Integer.md)
   * [First Unique Character in a String](387. First Unique Character in a String.md)
   * [Valid Anagram](242. Valid Anagram.md)
   * [Valid Palindrome](125. Valid Palindrome.md)
   * [Implement strStr()](28. Implement strStr().md)
-  * [Count and Say](38. Count and Say.md)
-
+* [Count and Say](38. Count and Say.md)
+  
   * [Unique Email Addresses](929. Unique Email Addresses.md)
   * [Longest Palindromic Substring](5. Longest Palindromic Substring.md)
   * [License Key Formatting](482. License Key Formatting.md)
@@ -237,22 +238,25 @@
   * [Remove Comments](722. Remove Comments.md)
   * [Reorder Log Files](937. Reorder Log Files.md)
   * [Remove Invalid Parentheses](301. Remove Invalid Parentheses.md)
-  * [Text Justification](68. Text Justification,md)
-
+* [Text Justification](68. Text Justification,md)
+  
   * [**Sliding window substring类**]()
-  	* [Minimum Window Substring](76. Minimum Window Substring.md)
+  	* [**Minimum Window Substring**](76. Minimum Window Substring.md)
   	* [Longest Substring Without Repeating Characters](3. Longest Substring Without Repeating Characters.md)
   	* [Longest Substring with At Most Two Distinct Characters](159. Longest Substring with At Most Two Distinct Characters.md)
-  	* [Longest Substring with At Most K Distinct Characters](340. Longest Substring with At Most K Distinct Characters.md)
-
+	* [**Longest Substring with At Most K Distinct Characters**](340. Longest Substring with At Most K Distinct Characters.md)
+  
 * [Trie](Trie.md)
   	* [Implement Trie](208. Implement Trie.md)
+  	* [Design Search Autocomplete System](642. Design Search Autocomplete System.md)
   	* [**Map Sum Pairs**](677. Map Sum Pairs.md)
   	* [Replace Words](648. Replace Words.md)
   	* [Word Search II](212. Word Search II.md)
   	* [Add and Search Word - Data structure design](211. Add and Search Word - Data structure design.md)
+  	* 
 
 * [Greedy]()
+  
   * [Jump Game](55. Jump Game.md)
 * [Math]()
   * [Palindrome Number](9. Palindrome Number.md)
@@ -262,7 +266,7 @@
   * [Fraction to Recurring Decimal](166. Fraction to Recurring Decimal.md)
   * [Best Meeting Point](296. Best Meeting Point.md)
 * [**Slidig window**]()
-  * [Fruit Into Baskets](904. Fruit Into Baskets.md)
+  * [**Fruit Into Baskets**](904. Fruit Into Baskets.md)
   * [Container With Most Water](11. Container With Most Water.md)
 * [其他数据结构]()
    * [Deque](Deque.md)
@@ -275,31 +279,32 @@
       * [Find Median from Data Stream](295. Find Median from Data Stream.md)
       * [Top K Frequent Words](692. Top K Frequent Words.md)
       * [Sliding Window Median](480. Sliding Window Median.md)
-      * [Design Search Autocomplete System](642. Design Search Autocomplete System.md)
       * [Employee Free Time.md](759. Employee Free Time.md)
    * [Intervel]()
    	 * [Merge Intervals](56. Merge Intervals.md)
-
-   * [Stack]()
-      * [Valid Parentheses](20. Valid Parentheses.md)
-      * [Largest Rectangle in Histogram](84. Largest Rectangle in Histogram.md)
-      * [Maximal Rectangle](85. Maximal Rectangle.md)
-      * [Evaluate Reverse Polish Notation](150. Evaluate Reverse Polish Notation.md)
-      * [Min Stack](155. Min Stack.md)
-      * [Max Stack](716. Max Stack.md)
-      * [Asteroid Collision](735. Asteroid Collision.md)
-      * [Basic Calculator](224. Basic Calculator.md)
-      * [Basic Calculator II](227. Basic Calculator II)
-      
+   
+* [Stack]()
+     * [Valid Parentheses](20. Valid Parentheses.md)
+     * [Largest Rectangle in Histogram](84. Largest Rectangle in Histogram.md)
+     * [Maximal Rectangle](85. Maximal Rectangle.md)
+     * [Evaluate Reverse Polish Notation](150. Evaluate Reverse Polish Notation.md)
+     * [Min Stack](155. Min Stack.md)
+     * [**Max Stack**](716. Max Stack.md)
+     * [Asteroid Collision](735. Asteroid Collision.md)
+     * [Basic Calculator](224. Basic Calculator.md)
+     * [Basic Calculator II](227. Basic Calculator II)
+     * [Basic Calculator III](772. Basic Calculator III.md)
+     
    * [HashTable]()
      * [Jewels and Stones](771. Jewels and Stones.md)
    * [Deque]()
-		 * [Sliding Window Maximum](239. Sliding Window Maximum.md)
-   * [TreeMap](TreeMap.md)
+   	 * [Sliding Window Maximum](239. Sliding Window Maximum.md)
+	* [TreeMap](TreeMap.md)
    		* [Odd Even Jump](975. Odd Even Jump.md)
    		* [Find Right Interval](436. Find Right Interval.md)
    		* [Time Based Key-Value Store](981. Time Based Key-Value Store.md)
 * [Graph]()
+  
      * [Clone Graph](133. Clone Graph.md)
 * [拓扑排序]()
      * [Course Schedule](207. Course Schedule .md)
@@ -308,23 +313,25 @@
      * [Alien Dictionary](269. Alien Dictionary.md)
 
 * [Union Find](Union Find.md)
- 	* [Redundant Connection](684. Redundant Connection.md)
- 	* friend circle
- 	* [Graph Valid Tree](261. Graph Valid Tree.md)
- 	* [Number of Islands II](305. Number of Islands II.md)
+     * [Redundant Connection](684. Redundant Connection.md)
+     * friend circle
+     * [Graph Valid Tree](261. Graph Valid Tree.md)
+     * [Number of Islands II](305. Number of Islands II.md)
 * [扫描线算法]()
      * [Meeting Rooms](252. Meeting Rooms.md)
-     * [Meeting Rooms II](253. Meeting Rooms II.md)
+     * [**Meeting Rooms II**](253. Meeting Rooms II.md)
      * [[Lintcode]391. Number of Airplanes in the Sky]([Lintcode]391. Number of Airplanes in the Sky.md)
    * [简单题]()
      * [Positions of Large Groups](830. Positions of Large Groups.md)
 * [Design]()
    * [LRU Cache](146. LRU Cache.md)
    * [Insert Delete GetRandom O(1)](380. Insert Delete GetRandom O(1).md)
-   * [Design Search Autocomplete System](642. Design Search Autocomplete System.md)
+   
 * [If you know you know]()
+	
 	* [Pour Water](755. Pour Water.md)
 * [CodeWars]()
+  
   * [Sum of the first nth term of Series](Sum of the first nth term of Series.md)
 
 ## System Design

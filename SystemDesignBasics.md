@@ -30,3 +30,29 @@ NoSQL
 Service SPF--> Load Balancer
 
 Database --> data replication
+
+
+
+# 套路
+
+加速--> caching
+
+
+
+spf: host 分datacenter, data replica
+
+
+
+call 失败怎么办: retry, exponential backoff retry
+
+
+
+host 不稳定, 随时宕机  Message queue
+
+
+
+Data shard: consistent sharding
+
+
+
+去重: 1. checksum 2. bloom filter
