@@ -86,3 +86,12 @@ path-ascending crawling
 
 - Too many web pages in sina.com, the crawler keeps crawling sina.com and don't crawl other websites
 - Use quota (10%)
+
+
+## Others
+#### bloom fileter
+check not exist 100% 
+
+check exist 90% correctness
+
+优点: 占用空间极小
