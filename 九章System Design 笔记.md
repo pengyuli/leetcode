@@ -69,3 +69,168 @@ Receive
 如果用户断线, push service通知channel service把用户移除
 
 MessageService --> channel service --> pushService
+
+
+
+
+
+# Tiny URL
+
+## Scenario
+
+### Use case
+
+1. give short URL return long URL
+2. give long URL return short URL  
+
+假设 100M DAU
+创建:
+QPS = 100M\*0.1/86400 = 100;
+peak QPS = QPS \* 3 = 300;
+
+点击:
+QPS = 100M\*1/86400 = 1000;
+peak QPS = QPS \* 3 = 3000;
+
+每天产生 100M\* 0.1 ~ 10M URL
+假设一条url 0.1k
+0.1k\*100M = 1GB 的data
+
+读>>写, 要用cache优化
+
+## Service
+
+### URLService
+
+- URLService.encode(long_url)
+- URLService.decode(short_url)
+
+## Storage
+
+实现生成short URL有两种方法
+
+### 1. 随机生成+数据库去重
+
+#### Database :
+
+1. SQL 分别对long URL 和short URL建立index
+2. NoSQL 用两张表存储
+
+### 2. 根据递增id生成URL
+
+因为url是a-z A-Z 0-9 62个组成可以把sequence id 转化成62进制, 然后存为shortURL
+
+#### DataBse:
+
+因为用sequence ID 所以必须SQL, 可以两张表分别存long->short 和short->long
+
+也可以用递增的sequentialId->long URL table
+这样只需要一个table(index: longURL)
+
+#### ZooKepper
+
+用zookepper把一共能生成的url个数, 划分为n个区, 然后每个host(worker thread)去拿一个区域, 然后在自己的server上counter+1生成URL. 如果用完了再去拿
+
+## Scale
+
+### Reduce response time
+
+Cache 读多
+
+# Design Web Crawler
+
+Use case:
+
+要确定是重复的爬还是就爬一次
+
+
+
+## Scenario
+
+### calculation 
+
+- Assume 15billion pages within 4 weeks
+  - 15B / (4 weeks * 7 days * 86400 sec) ~= 6200 pages/sec
+- Storage
+  - 15B*100kb = 1.5Petabytes
+
+
+
+### High level design
+
+BFS crawl
+
+1. Pick a URL from the unvisited URL list.
+2. Determine the IP Address of its host-name.
+3. Establish a connection to the host to download the corresponding document.
+4. Parse the document contents to look for new URLs.
+5. Add the new URLs to the list of unvisited URLs.
+6. Process the downloaded document, e.g., store it or index its contents, etc.
+7. Go back to step 1
+
+
+
+
+
+## Storage & Service
+
+需要两个storage, 一个来存crawl下来的web contentd的webstorage,  一个用来作为crawler的queue and hash table(UrlStorage)
+
+
+
+Crawler每次可以向UrlStorage拿1000个URL来craw(防止高频率的读写出现concurrency)
+
+Crawler每次crawl下来的网站content, 存入webstorage, 然后提取出来URL放入UrlStorage. 
+
+Task Table
+
+| Id     | url  | state    | priority | available_time |
+| ------ | ---- | -------- | -------- | -------------- |
+| userId | URL  | crawling | 1        | time           |
+
+Crawler用BFS方式读URL 写入table.
+
+Crawler在爬的网页会把state改成working
+
+Priority是在好多available时候优先处理的网页
+
+Available time控制抓取频率, 
+
+
+
+### Shard task table
+
+- Horizontal sharding
+
+
+
+## Scale
+
+### Isolate pages
+
+path-ascending crawling
+
+
+
+### How to handle update for failure
+
+- Exponential back-off
+  - Success: crawl after 1 week
+  - no.1 failure: crawl after 2 weeks
+  - no.2 failure: crawl after 4 weeks
+  - no.3 failure: crawl after 8 weeks
+
+### How to handle dead cycle
+
+- Too many web pages in sina.com, the crawler keeps crawling sina.com and don't crawl other websites
+- Use quota (10%)
+
+## Others
+
+#### bloom fileter
+
+check not exist 100% 
+
+check exist 90% correctness
+
+优点: 占用空间极小

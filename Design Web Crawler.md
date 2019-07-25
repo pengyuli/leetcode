@@ -1,12 +1,20 @@
 # Design Web Crawler
 
-Use case:
-
-要确定是重复的爬还是就爬一次
 
 
+## Clarify
 
-## Scenario
+### Requirement
+
+1. Is it only HTML or include(mp3, image, mp4...)
+
+2. How many pages and are we crawl once on constant crawl
+
+
+
+Extra requirement
+
+网站应该有Priority  对要爬的website要有politeness
 
 ### calculation 
 
@@ -31,38 +39,34 @@ BFS crawl
 
 
 
+## Service
+
+1. DNS resolver    记录网站的host ip
+2. HTML fetcher   下载document存入file storage
+3. URL extracter   在document中提取出url
+4. URL filter     过滤掉不要的URL(比如mp3, jpg类)
+5. URL frontiner         handle priority 和politeness
+6. Document 和 URL dedup check
+
+
+
 
 
 ## Storage & Service
 
-需要两个storage, 一个来存crawl下来的web contentd的webstorage,  一个用来作为crawler的queue and hash table(UrlStorage)
+需要两个storage, 一个来存crawl下来的web contentd 可以用S3 或者HDFS
+
+另外一个是URL table 可以存一些url 相关的信息
 
 
 
-Crawler每次可以向UrlStorage拿1000个URL来craw(防止高频率的读写出现concurrency)
-
-Crawler每次crawl下来的网站content, 存入webstorage, 然后提取出来URL放入UrlStorage. 
-
-Task Table
-
-| Id     | url  | state    | priority | available_time |
-| ------ | ---- | -------- | -------- | -------------- |
-| userId | URL  | crawling | 1        | time           |
-
-
-Crawler用BFS方式读URL 写入table.
-
-Crawler在爬的网页会把state改成working
-
-Priority是在好多available时候优先处理的网页
-
-Available time控制抓取频率, 
+如果要用checkSum来查重, 需要document和url的checksum table
 
 
 
 ### Shard task table
 
-- Horizontal sharding
+- sharding key : URL
 
 
 
@@ -91,6 +95,18 @@ path-ascending crawling
 ## Others
 #### bloom fileter
 check not exist 100% 
+
+
+
+
+
+## Reference
+
+https://www.youtube.com/watch?v=BKZxZwUgL3Y&t=138s
+
+https://www.educative.io/collection/page/5668639101419520/5649050225344512/5718998062727168
+
+
 
 check exist 90% correctness
 
