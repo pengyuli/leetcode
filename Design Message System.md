@@ -38,10 +38,10 @@ pull: read heavy to DB, most time of the read will be empty response
 pull: for group chat we may need to push to user not online, will be solve if we have user online status 
 
 #### long pull vs websocket
-LP: hanging Get, after get the response will sand another response.
+LP: hanging Get, after get the response form server client will sand another request. so there may potential has delay on messages between the 1st response and 2nd response 
 
 WS: provide persistent connection between user and server
- 
+
 
 ## Storage
 
