@@ -298,3 +298,35 @@ Trie放到query service里.
 
 1. 不记录所有的 而是每次用户搜索关键词 1~1000随机抽取一个数, 如果是1才存, 这样减少了1000倍的写操作.
 
+# Rate limiter
+## 方法1(九章解法)
+要记录某个特种 某个时刻 做了什么事情
+
+可以用Cache存储数据, 因为对于rete limiter, 数据过了当前时段就没有用了.
+
+##### Key
+userID + feature + timeStamp 作为memchashed key
+
+用memchashed的increament功能, timeStamp为当前分钟
+
+#### use case
+假设为50次/min, Key 为event + feature + timeStamp(当前分钟)
+
+写: 每次用memeched.increament(key, ttl) 将对应的bucket访问次数+1
+
+读:每次用event+feature+timeStamp(过去60分钟的60个data)取出来, 然后计算访问次数
+
+如果是天, 读24小时, 小时读60分钟这样分级存储
+
+#### cache 容量
+UserId 8byte
+feature 8byte
+Count 2 byte
+Time 8 byte
+
+假设 1M用户, 限制100/h
+
+存储数据 (8+8+2+8) x 60 x 1m = 1.6GB
+
+### Data Sharding
+用consistent hashing来做data replica and sharding. Sharding key是 memcached的key
