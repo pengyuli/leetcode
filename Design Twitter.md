@@ -100,3 +100,23 @@ Method : LRU + cache last 3 days of data
 
 
 
+### like function
+
+example like twee
+
+like table
+
+| likeId | tweeId | userId | timeStamp | status                 |
+| ------ | ------ | ------ | --------- | ---------------------- |
+|        |        |        |           | 用来表示like是否还有效 |
+
+Activity table
+
+| tweeId | likes |
+| ------ | ----- |
+|        |       |
+
+用increment的方法来记录likes的多少, 因为每次query like table会导致很慢
+
+
+
