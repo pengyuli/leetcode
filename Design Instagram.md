@@ -72,3 +72,27 @@ Image存在file storage like S3 or HDFS
 ##### Shrad by creation time
 
 这样读取会可以只query一部分db, 但是写load都在同样的db上
+
+
+
+### Like function
+
+like table, 记录所有的like信息
+
+| UserId | Status                              | time | Type         | ActivityId       |
+| ------ | ----------------------------------- | ---- | ------------ | ---------------- |
+|        | 这条记录是否还有效(undo like则无效) |      | Comment/post | commentId/PostId |
+
+这个table可以找到所有like某条post的人, 但是更多时候我们需要知道like的次数, 如果用这个table
+
+1. concurrency write
+2. aggregation 很慢
+
+所以还需要一个Activity table
+
+| ActivityId | likeCount |
+| ---------- | --------- |
+|            |           |
+
+
+
