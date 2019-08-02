@@ -335,8 +335,10 @@
 * [If you know you know]()
 	
 	* [Pour Water](755. Pour Water.md)
+	* [ZigZag Conversion](6. ZigZag Conversion.md)
+	* [Next Permutation](31. Next Permutation.md)
+	* [First Missing Positive](41. First Missing Positive.md)
 * [CodeWars]()
-  
   * [Sum of the first nth term of Series](Sum of the first nth term of Series.md)
 
 ## System Design
