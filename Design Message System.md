@@ -115,8 +115,26 @@ converSationId >> userId
 1. Single Server down, client side reconnect to new server, no big issue
 2. need to have data replication
 
+### Cross region talk
+If userA in US userB in CN, and connect to local server, the speed will be slow. So we can have a P2P connection.
+
+If we also need to store the chat history, the client should send message to both server and another client, at server side it can save the message to storage.
+
+If userB is offline? In this case the UserA client can fail the message and notify the user. Which means users can only send messages to online users.
+The client sends the message to the server alone. So when UserB comes online, it asks the server for all the pending messages.
+
+### connection to server
+upto 300k client to one server, based on CPU and Memory
 
 ## Resourses
 [https://www.educative.io/collection/page/5668639101419520/5649050225344512/5724160613416960](https://www.educative.io/collection/page/5668639101419520/5649050225344512/5724160613416960)
 
 [https://www.youtube.com/watch?v=zKPNUMkwOJE&t=635s](https://www.youtube.com/watch?v=zKPNUMkwOJE&t=635s)
+
+
+### 关于TCP connection
+On the TCP level, the tuple (source IP, source port, destination IP, destination port) must be unique for each simultaneous connection. That means a single client cannot open more than 65535 simultaneous connections to a server. But a server can (theoretically) server 65535 simultaneous connections per client.
+
+So in practice, the server is only limited by how much CPU power, memory etc. it has to serve requests, not by the number of TCP connections to the server.
+
+The above explanation tells us that we can serve more than 10k (concurrent connections on one server, but it depends upon the CPU/memory on the server

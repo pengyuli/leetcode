@@ -282,7 +282,8 @@
       * [Employee Free Time.md](759. Employee Free Time.md)
    * [Intervel]()
    	 * [**Merge Intervals**](56. Merge Intervals.md)
-   	 * [Interval List Intersections](986. Interval List Intersections.md) 
+   	 * [Interval List Intersections](986. Interval List Intersections.md)
+   	 * [Insert Interval](57. Insert Interval.md)
 
 * [Stack]()
      * [Valid Parentheses](20. Valid Parentheses.md)
