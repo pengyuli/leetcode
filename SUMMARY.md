@@ -130,6 +130,7 @@
   * [Palindrome Linked List](234. Palindrome Linked List.md)
   * [Odd Even Linked List](328. Odd Even Linked List.md)
   * [Remove Nth Node From End of List](19. Remove Nth Node From End of List.md)
+  * [**Reverse Nodes in k-Group**](25. Reverse Nodes in k-Group.md)
 
 
 * [BFS and DFS](BFS and DFS.md)
@@ -233,6 +234,7 @@
   * [String to Integer (atoi)](8. String to Integer (atoi).md)
   * [Robot Return to Origin](657. Robot Return to Origin.md)
   * [Roman to Integer](13. Roman to Integer.md)
+  * [Integer to Roman](12. Integer to Roman.md)
   * [Read N Characters Given Read4](157. Read N Characters Given Read4.md)
   * [Read N Characters Given Read4 II - Call multiple times](158. Read N Characters Given Read4 II - Call multiple times.md)
   * [Remove Comments](722. Remove Comments.md)
@@ -265,6 +267,7 @@
   * [Power of Two](231. Power of Two.md)
   * [Fraction to Recurring Decimal](166. Fraction to Recurring Decimal.md)
   * [Best Meeting Point](296. Best Meeting Point.md)
+  * [Max Points on a Line](149. Max Points on a Line.md) 
 * [**Slidig window**]()
   * [**Fruit Into Baskets**](904. Fruit Into Baskets.md)
   * [Container With Most Water](11. Container With Most Water.md)
@@ -283,7 +286,7 @@
    * [Intervel]()
    	 * [**Merge Intervals**](56. Merge Intervals.md)
    	 * [Interval List Intersections](986. Interval List Intersections.md)
-   	 * [Insert Interval](57. Insert Interval.md)
+   	 * [**Insert Interval**](57. Insert Interval.md)
 
 * [Stack]()
      * [Valid Parentheses](20. Valid Parentheses.md)
@@ -296,15 +299,16 @@
      * [Basic Calculator](224. Basic Calculator.md)
      * [Basic Calculator II](227. Basic Calculator II)
      * [**Basic Calculator III**](772. Basic Calculator III.md)
+     * [ **Flatten Nested List Iterator**](341. Flatten Nested List Iterator.md)
      
    * [HashTable]()
      * [Jewels and Stones](771. Jewels and Stones.md)
-   * [Deque]()
+* [Deque]()
    	 * [Sliding Window Maximum](239. Sliding Window Maximum.md)
-	* [TreeMap](TreeMap.md)
+* [TreeMap](TreeMap.md)
    		* [Odd Even Jump](975. Odd Even Jump.md)
-   		* [Find Right Interval](436. Find Right Interval.md)
-   		* [Time Based Key-Value Store](981. Time Based Key-Value Store.md)
+      		* [Find Right Interval](436. Find Right Interval.md)
+             		* [Time Based Key-Value Store](981. Time Based Key-Value Store.md)
 * [Graph]()
   
      * [Clone Graph](133. Clone Graph.md)
