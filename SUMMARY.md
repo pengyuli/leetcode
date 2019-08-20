@@ -218,7 +218,7 @@
   * [Valid Anagram](242. Valid Anagram.md)
   * [Valid Palindrome](125. Valid Palindrome.md)
   * [Implement strStr()](28. Implement strStr().md)
-* [Count and Say](38. Count and Say.md)
+  * [Count and Say](38. Count and Say.md)
   
   * [Unique Email Addresses](929. Unique Email Addresses.md)
   * [Longest Palindromic Substring](5. Longest Palindromic Substring.md)
@@ -240,7 +240,7 @@
   * [Remove Comments](722. Remove Comments.md)
   * [Reorder Log Files](937. Reorder Log Files.md)
   * [Remove Invalid Parentheses](301. Remove Invalid Parentheses.md)
-* [Text Justification](68. Text Justification,md)
+* [Text Justification](68. Text Justification.md)
   
   * [**Sliding window substring类**]()
   	* [**Minimum Window Substring**](76. Minimum Window Substring.md)
@@ -268,6 +268,7 @@
   * [Fraction to Recurring Decimal](166. Fraction to Recurring Decimal.md)
   * [Best Meeting Point](296. Best Meeting Point.md)
   * [Max Points on a Line](149. Max Points on a Line.md) 
+  * [Happy Number](202. Happy Number.md)
 * [**Slidig window**]()
   * [**Fruit Into Baskets**](904. Fruit Into Baskets.md)
   * [Container With Most Water](11. Container With Most Water.md)
