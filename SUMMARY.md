@@ -177,7 +177,9 @@
      * [**Wildcard Matching**](44. Wildcard Matching.md)
      * [**Regular Expression Matching**](10. Regular Expression Matching.md)
      * [**Best Time to Buy and Sell Stock IV**](188. Best Time to Buy and Sell Stock IV.md)
-
+   * [other]()
+     * [Cherry Pickup](741. Cherry Pickup.md)  
+  
 * [Array](Array.md)
   * [Remove Duplicates from Sorted Array](26. Remove Duplicates from Sorted Array.md)
   * [Remove Duplicates from Sorted Array II](80. Remove Duplicates from Sorted Array II.md)
@@ -301,7 +303,7 @@
      * [Basic Calculator II](227. Basic Calculator II)
      * [**Basic Calculator III**](772. Basic Calculator III.md)
      * [ **Flatten Nested List Iterator**](341. Flatten Nested List Iterator.md)
-     
+     * [Add Two Numbers II.md](445. Add Two Numbers II.md)
    * [HashTable]()
      * [Jewels and Stones](771. Jewels and Stones.md)
 * [Deque]()
