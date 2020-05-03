@@ -221,7 +221,6 @@
   * [Valid Palindrome](125. Valid Palindrome.md)
   * [Implement strStr()](28. Implement strStr().md)
   * [Count and Say](38. Count and Say.md)
-  
   * [Unique Email Addresses](929. Unique Email Addresses.md)
   * [Longest Palindromic Substring](5. Longest Palindromic Substring.md)
   * [License Key Formatting](482. License Key Formatting.md)
@@ -242,6 +241,7 @@
   * [Remove Comments](722. Remove Comments.md)
   * [Reorder Log Files](937. Reorder Log Files.md)
   * [Remove Invalid Parentheses](301. Remove Invalid Parentheses.md)
+  * [Add Binary](67. Add Binary.md)
 * [Text Justification](68. Text Justification.md)
   
   * [**Sliding window substring类**]()
@@ -327,7 +327,7 @@
          * [Graph Valid Tree](261. Graph Valid Tree.md)
          * [Number of Islands II](305. Number of Islands II.md)
     * [Dijkstra]()
-		* [Cheapest Flights Within K Stops](787. Cheapest Flights Within K Stops.md) 
+		* [**Cheapest Flights Within K Stops**](787. Cheapest Flights Within K Stops.md) 
 * [扫描线算法]()
      * [Meeting Rooms](252. Meeting Rooms.md)
      * [**Meeting Rooms II**](253. Meeting Rooms II.md)
